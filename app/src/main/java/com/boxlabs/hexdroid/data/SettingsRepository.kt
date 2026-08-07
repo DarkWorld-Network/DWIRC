@@ -256,8 +256,8 @@ class SettingsRepository(private val ctx: Context) {
             val o = JSONObject(json)
             UiSettings(
                 themeMode = runCatching {
-                    ThemeMode.valueOf(o.optString("themeMode", ThemeMode.DARK.name))
-                }.getOrDefault(ThemeMode.DARK),
+                    ThemeMode.valueOf(o.optString("themeMode", ThemeMode.DARKWORLD.name))
+                }.getOrDefault(ThemeMode.DARKWORLD),
                 compactMode = o.optBoolean("compactMode", false),
                 networkTabs = o.optBoolean("networkTabs", false),
                 networkTabsAtBottom = o.optBoolean("networkTabsAtBottom", false),
@@ -746,7 +746,7 @@ class SettingsRepository(private val ctx: Context) {
             saslPassword = null,
             caps = CapPrefs(),
             autoJoin = emptyList(),
-            showInSidebar = false
+            showInSidebar = true
         ),
         NetworkProfile(
             id = "Rizon",
@@ -766,7 +766,7 @@ class SettingsRepository(private val ctx: Context) {
             saslPassword = null,
             caps = CapPrefs(),
             autoJoin = emptyList(),
-            showInSidebar = false
+            showInSidebar = true
         ),
         NetworkProfile(
             id = "Undernet",
@@ -786,7 +786,7 @@ class SettingsRepository(private val ctx: Context) {
             saslPassword = null,
             caps = CapPrefs(),
             autoJoin = emptyList(),
-            showInSidebar = false
+            showInSidebar = true
         ),
         NetworkProfile(
             id = "EFnet",
@@ -806,7 +806,7 @@ class SettingsRepository(private val ctx: Context) {
             saslPassword = null,
             caps = CapPrefs(),
             autoJoin = emptyList(),
-            showInSidebar = false
+            showInSidebar = true
         ),
         NetworkProfile(
             id = "QuakeNet",
@@ -826,7 +826,7 @@ class SettingsRepository(private val ctx: Context) {
             saslPassword = null,
             caps = CapPrefs(),
             autoJoin = emptyList(),
-            showInSidebar = false
+            showInSidebar = true
         ),
         NetworkProfile(
             id = "DALnet",
@@ -846,7 +846,7 @@ class SettingsRepository(private val ctx: Context) {
             saslPassword = null,
             caps = CapPrefs(),
             autoJoin = emptyList(),
-            showInSidebar = false
+            showInSidebar = true
         )
     )
 
@@ -1131,7 +1131,7 @@ class SettingsRepository(private val ctx: Context) {
     }
 }
 
-enum class ThemeMode { SYSTEM, LIGHT, DARK, MATRIX, TERMINAL }
+enum class ThemeMode { SYSTEM, LIGHT, DARKWORLD, DARK, MATRIX, TERMINAL }
 
 data class AutoJoinChannel(val channel: String, val key: String? = null) {
     fun toLine(): String = if (key.isNullOrBlank()) channel else "$channel $key"
@@ -1228,8 +1228,8 @@ data class NetworkProfile(
     /**
      * If true, this network appears in the buffer drawer / channel switcher. Default true so
      * app updates never silently hide a user's existing or edited networks. The shipped preset
-     * networks are seeded false (except DarkWorld) so they don't clog the switcher out of the box;
-     * the network you're actively viewing is always shown regardless of this flag.
+     * All shipped preset networks are visible by default. Users may explicitly hide
+     * individual networks; the actively viewed network is always shown regardless.
      */
     val showInSidebar: Boolean = true,
 

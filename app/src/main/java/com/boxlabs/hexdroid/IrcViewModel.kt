@@ -200,7 +200,7 @@ enum class VibrateIntensity { LOW, MEDIUM, HIGH }
 enum class DccSendMode { AUTO, ACTIVE, PASSIVE }
 
 data class UiSettings(
-    val themeMode: ThemeMode = ThemeMode.DARK,
+    val themeMode: ThemeMode = ThemeMode.DARKWORLD,
     val compactMode: Boolean = false,
     // Buffer-drawer navigation. networkTabs replaces the vertical network tree with a
     // horizontal tab strip (one tab per network, showing that network's buffers below).
@@ -289,7 +289,7 @@ data class UiSettings(
     val dccIncomingPortMax: Int = 5010,
     val dccDownloadFolderUri: String? = null,
 
-    val quitMessage: String = "An IRC client for Android - https://hexdroid.org",
+    val quitMessage: String = "DWIRC for Android - https://darkworld.network",
     val partMessage: String = "Leaving",
 
     val colorizeNicks: Boolean = true,
@@ -11729,7 +11729,7 @@ private fun moveNickAcrossChannels(netId: String, oldNick: String, newNick: Stri
 
         val gpu = cachedGpu ?: readGpuRendererBestEffort().also { cachedGpu = it }
 
-        return "HexDroid v${BuildConfig.VERSION_NAME} | " +
+        return "DWIRC v${BuildConfig.VERSION_NAME} | " +
             "Device: $device running Android $release $codename (API $api), CPU: ${cpuCores}-core $cpuModel, " +
             "Memory: ${fmtBytes(totalMem)} total, ${fmtBytes(usedMem)} (${fmtPct(usedMemPct)}) used, ${fmtBytes(availMem)} (${fmtPct(1.0 - usedMemPct)}) free, " +
             "Storage: ${fmtBytes(totalStorage)} total, ${fmtBytes(usedStorage)} (${fmtPct(usedStoPct)}) used, ${fmtBytes(freeStorage)} (${fmtPct(1.0 - usedStoPct)}) free, " +
