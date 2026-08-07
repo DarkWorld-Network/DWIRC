@@ -36,10 +36,8 @@ android {
                 "proguard-rules.pro"
             )
             val ksFile = System.getenv("KEYSTORE_FILE")
-            signingConfig = if (ksFile != null && file(ksFile).exists()) {
-                signingConfigs.getByName("release")
-            } else {
-                signingConfigs.getByName("debug")
+            if (ksFile != null && file(ksFile).exists()) {
+                signingConfig = signingConfigs.getByName("release")
             }
         }
     }

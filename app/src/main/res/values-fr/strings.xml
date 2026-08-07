@@ -2,7 +2,7 @@
     <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
-    <string name="welcome_title">Bienvenue sur HexDroid IRC</string>
+    <string name="welcome_title">Bienvenue sur DWIRC</string>
     <string name="welcome_subtitle">Configurons tout avant de commencer.</string>
     <string name="welcome_language_label">Langue</string>
     <string name="welcome_nick_label">Pseudonyme</string>
@@ -191,7 +191,7 @@
 
     <!-- Tour steps -->
     <string name="tour_add_network_title">Vos réseaux</string>
-    <string name="tour_add_network_body">Appuyez sur + pour ajouter un serveur ou modifier ceux déjà présents. HexDroid est livré avec quelques réseaux par défaut.</string>
+    <string name="tour_add_network_body">Appuyez sur + pour ajouter un serveur ou modifier ceux déjà présents. DWIRC est livré avec quelques réseaux par défaut.</string>
     <string name="tour_connect_title">Se connecter</string>
     <string name="tour_connect_body">Appuyez sur Connecter pour ouvrir une connexion. Vous pouvez avoir plusieurs réseaux connectés en même temps.</string>
     <string name="tour_switcher_title">Liste des tampons</string>
@@ -751,7 +751,7 @@ C\'est une nouvelle exigence d\'Android 17 pour les connexions aux serveurs du r
     <string name="enc_safety_number">Numéro de sécurité</string>
     <string name="enc_verify_match">Vérifiez que ceci correspond à ce que voit votre correspondant.</string>
     <string name="enc_cipher">Chiffrement</string>
-    <string name="enc_agm_desc">Authenticated Group Messaging de HexDroid. Une clé aléatoire de 256 bits, chiffrement authentifié par message. C\'est vous qui partagez la clé.</string>
+    <string name="enc_agm_desc">Authenticated Group Messaging de DWIRC. Une clé aléatoire de 256 bits, chiffrement authentifié par message. C\'est vous qui partagez la clé.</string>
     <string name="enc_age_desc">Authenticated Group Exchange. Les clés sont négociées automatiquement et tournent vers l\'avant. Confidentialité persistante pour les MP.</string>
     <string name="enc_fish_desc">N\'utilisez FiSH que si l\'autre partie ne sait pas parler +AGM ou +AGE.</string>
     <string name="enc_regen">Régénérer</string>
@@ -963,7 +963,7 @@ C\'est une nouvelle exigence d\'Android 17 pour les connexions aux serveurs du r
     <string name="vm_names_none">NAMES pour %1$s : (aucun)</string>
     <string name="vm_names_header">NAMES pour %1$s (%2$s) :</string>
     <string name="vm_log_write_failed">Échec de l\'écriture du journal pour %1$s : %2$s</string>
-    <string name="vm_dcc_lan_perm">DCC de %1$s : autorisation réseau local requise (Android 17+). Accordez-la dans Paramètres → Applications → HexDroid → Autorisations.</string>
+    <string name="vm_dcc_lan_perm">DCC de %1$s : autorisation réseau local requise (Android 17+). Accordez-la dans Paramètres → Applications → DWIRC → Autorisations.</string>
     <string name="vm_dcc_accepted_passive">Offre DCC passive acceptée : %1$s (écoute sur %2$s)%3$s</string>
     <string name="vm_dcc_resume_requested">DCC RESUME demandé pour %1$s à %2$s octets…</string>
     <string name="vm_dcc_resume_agreed">L\'expéditeur a accepté RESUME à %1$s octets (nous en demandions %2$s)</string>
@@ -980,7 +980,7 @@ C\'est une nouvelle exigence d\'Android 17 pour les connexions aux serveurs du r
     <string name="vm_dcc_chat_connected">DCC CHAT connecté à %1$s</string>
     <string name="vm_dcc_chat_not_connected">DCC CHAT non connecté.</string>
     <string name="vm_dcc_chat_send_failed">Échec de l\'envoi DCC CHAT : %1$s</string>
-    <string name="vm_dcc_chat_lan_perm">DCC CHAT de %1$s : autorisation réseau local requise (Android 17+). Accordez-la dans Paramètres → Applications → HexDroid → Autorisations.</string>
+    <string name="vm_dcc_chat_lan_perm">DCC CHAT de %1$s : autorisation réseau local requise (Android 17+). Accordez-la dans Paramètres → Applications → DWIRC → Autorisations.</string>
     <string name="vm_dcc_chat_connecting">Connexion DCC CHAT à %1$s (%2$s:%3$s)…</string>
     <string name="vm_dcc_chat_connect_failed">Échec de la connexion DCC CHAT : %1$s</string>
     <string name="vm_dcc_chat_rejected">Offre DCC CHAT de %1$s refusée</string>
@@ -1038,8 +1038,7 @@ C\'est une nouvelle exigence d\'Android 17 pour les connexions aux serveurs du r
     <string name="ok">OK</string>
     <string name="remove">Supprimer</string>
     <string name="add">Ajouter</string>
-    <string name="about_logo_desc">Logo HexDroid</string>
-    <string name="about_boxlabs_desc">boxlabs</string>
+    <string name="about_logo_desc">Logo DWIRC</string>
     <string name="netedit_port_range">Le port doit être compris entre 1 et 65535</string>
     <string name="netedit_sasl_external">EXTERNAL (certificat client)</string>
     <string name="netedit_cert_pem">PEM (.pem)</string>
@@ -1146,7 +1145,7 @@ C\'est une nouvelle exigence d\'Android 17 pour les connexions aux serveurs du r
     <string name="core_reg_hint_invalid_code">(revérifiez le code du message de vérification)</string>
     <string name="core_reg_hint_not_connected">(attendez d\'être complètement connecté, puis réessayez)</string>
     <string name="core_reg_hint_temp_unavailable">(réessayez plus tard)</string>
-    <string name="core_age_plaintext_refused">+AGE est activé pour %1$s mais ce message n\'était pas chiffré : il n\'a donc PAS été envoyé (HexDroid refuse de le transmettre en clair). Désactivez +AGE ici pour discuter normalement.</string>
+    <string name="core_age_plaintext_refused">+AGE est activé pour %1$s mais ce message n\'était pas chiffré : il n\'a donc PAS été envoyé (DWIRC refuse de le transmettre en clair). Désactivez +AGE ici pour discuter normalement.</string>
     <string name="core_nick_still_in_use">%1$s est toujours utilisé ; nouvelle tentative discrète en arrière-plan (une session résiduelle se libère généralement en quelques minutes).</string>
     <string name="core_nick_gave_up">Abandon de la récupération de %1$s, toujours utilisé. Utilisez /nick %1$s pour réessayer.</string>
     <string name="core_oversize_line_dropped">Une ligne IRC entrante trop longue (&gt;32 Kio) a été ignorée. La connexion est maintenue ; les rejets suivants seront silencieux.</string>

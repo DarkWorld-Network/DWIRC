@@ -2,7 +2,7 @@
     <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
-    <string name="welcome_title">مرحبًا في HexDroid IRC</string>
+    <string name="welcome_title">مرحبًا في DWIRC</string>
     <string name="welcome_subtitle">دعنا نعدّك قبل البدء.</string>
     <string name="welcome_language_label">اللغة</string>
     <string name="welcome_nick_label">الاسم المستعار</string>
@@ -191,7 +191,7 @@
 
     <!-- Tour steps -->
     <string name="tour_add_network_title">شبكاتك</string>
-    <string name="tour_add_network_body">اضغط + لإضافة خادم، أو عدّل الموجود. يأتي HexDroid مع بعض الشبكات الافتراضية.</string>
+    <string name="tour_add_network_body">اضغط + لإضافة خادم، أو عدّل الموجود. يأتي DWIRC مع بعض الشبكات الافتراضية.</string>
     <string name="tour_connect_title">اتصال</string>
     <string name="tour_connect_body">اضغط اتصال لفتح اتصال. يمكنك الاتصال بعدة شبكات في الوقت نفسه.</string>
     <string name="tour_switcher_title">قائمة المخازن</string>
@@ -207,7 +207,7 @@
     <string name="tour_send_file_title">إرسال ملف</string>
     <string name="tour_send_file_body">أدخل اللقب المستهدف، ثم اختر ملفاً من التخزين. تصل عروض DCC الواردة هنا أيضاً، اقبلها أو ارفضها من الإشعارات.</string>
     <string name="tour_support_title">تحتاج إلى مساعدة؟</string>
-    <string name="tour_support_body">اتصل بـ DarkWorld وانضم إلى ‎#Help للدعم أو طلبات الميزات أو مجرد الدردشة مع مستخدمي HexDroid الآخرين.</string>
+    <string name="tour_support_body">اتصل بـ DarkWorld وانضم إلى ‎#Help للدعم أو طلبات الميزات أو مجرد الدردشة مع مستخدمي DWIRC الآخرين.</string>
     <string name="tour_support_fallback">DarkWorld ليست في قائمتك بعد: اضغط على إضافة DarkWorld لإضافتها، ثم اتصل وانضم إلى ‎#Help للدعم.</string>
     <string name="tour_support_action">إضافة DarkWorld</string>
     <string name="tour_replay_title">إعادة تشغيل الجولة</string>
@@ -751,7 +751,7 @@
     <string name="enc_safety_number">رقم الأمان</string>
     <string name="enc_verify_match">تحقّق من أنه يطابق ما يراه الطرف الآخر.</string>
     <string name="enc_cipher">الشيفرة</string>
-    <string name="enc_agm_desc">‏Authenticated Group Messaging من HexDroid.  مفتاح عشوائي واحد بطول 256 بت، وتشفير موثّق لكل رسالة. أنت من يشارك المفتاح.</string>
+    <string name="enc_agm_desc">‏Authenticated Group Messaging من DWIRC.  مفتاح عشوائي واحد بطول 256 بت، وتشفير موثّق لكل رسالة. أنت من يشارك المفتاح.</string>
     <string name="enc_age_desc">‏Authenticated Group Exchange.  تُتفاوض المفاتيح تلقائياً وتتجدد إلى الأمام. سرية تامة للرسائل الخاصة.</string>
     <string name="enc_fish_desc">استخدم FiSH فقط عندما لا يدعم الطرف الآخر +AGM أو +AGE.</string>
     <string name="enc_regen">إعادة التوليد</string>
@@ -963,7 +963,7 @@
     <string name="vm_names_none">‏NAMES لـ %1$s: (لا شيء)</string>
     <string name="vm_names_header">‏NAMES لـ %1$s (%2$s):</string>
     <string name="vm_log_write_failed">فشلت كتابة السجل لـ %1$s: %2$s</string>
-    <string name="vm_dcc_lan_perm">‏DCC من %1$s: يلزم إذن الشبكة المحلية (Android 17+). امنحه من الإعدادات ← التطبيقات ← HexDroid ← الأذونات.</string>
+    <string name="vm_dcc_lan_perm">‏DCC من %1$s: يلزم إذن الشبكة المحلية (Android 17+). امنحه من الإعدادات ← التطبيقات ← DWIRC ← الأذونات.</string>
     <string name="vm_dcc_accepted_passive">قُبل عرض DCC السلبي: %1$s (الإنصات على %2$s)%3$s</string>
     <string name="vm_dcc_resume_requested">طُلب DCC RESUME لـ %1$s عند %2$s بايت…</string>
     <string name="vm_dcc_resume_agreed">قبل المرسل RESUME عند %1$s بايت (طلبنا %2$s)</string>
@@ -980,7 +980,7 @@
     <string name="vm_dcc_chat_connected">اتصل DCC CHAT بـ %1$s</string>
     <string name="vm_dcc_chat_not_connected">‏DCC CHAT غير متصل.</string>
     <string name="vm_dcc_chat_send_failed">فشل الإرسال في DCC CHAT: %1$s</string>
-    <string name="vm_dcc_chat_lan_perm">‏DCC CHAT من %1$s: يلزم إذن الشبكة المحلية (Android 17+). امنحه من الإعدادات ← التطبيقات ← HexDroid ← الأذونات.</string>
+    <string name="vm_dcc_chat_lan_perm">‏DCC CHAT من %1$s: يلزم إذن الشبكة المحلية (Android 17+). امنحه من الإعدادات ← التطبيقات ← DWIRC ← الأذونات.</string>
     <string name="vm_dcc_chat_connecting">جارٍ توصيل DCC CHAT بـ %1$s (%2$s:%3$s)…</string>
     <string name="vm_dcc_chat_connect_failed">فشل اتصال DCC CHAT: %1$s</string>
     <string name="vm_dcc_chat_rejected">رُفض عرض DCC CHAT من %1$s</string>
@@ -1038,8 +1038,7 @@
     <string name="ok">موافق</string>
     <string name="remove">إزالة</string>
     <string name="add">إضافة</string>
-    <string name="about_logo_desc">شعار HexDroid</string>
-    <string name="about_boxlabs_desc">‏boxlabs</string>
+    <string name="about_logo_desc">شعار DWIRC</string>
     <string name="netedit_port_range">يجب أن يكون المنفذ بين 1 و 65535</string>
     <string name="netedit_sasl_external">‏EXTERNAL (شهادة العميل)</string>
     <string name="netedit_cert_pem">‏PEM (.pem)</string>
@@ -1146,7 +1145,7 @@
     <string name="core_reg_hint_invalid_code">(أعد التحقق من الرمز الوارد في رسالة التحقق)</string>
     <string name="core_reg_hint_not_connected">(انتظر حتى يكتمل الاتصال، ثم حاول مرة أخرى)</string>
     <string name="core_reg_hint_temp_unavailable">(حاول مرة أخرى لاحقاً)</string>
-    <string name="core_age_plaintext_refused">‏+AGE مفعّل لـ %1$s لكن هذه الرسالة لم تكن مشفّرة، لذا لم تُرسل (لن يضعها HexDroid على الشبكة كنص واضح). عطّل +AGE هنا للدردشة بشكل طبيعي.</string>
+    <string name="core_age_plaintext_refused">‏+AGE مفعّل لـ %1$s لكن هذه الرسالة لم تكن مشفّرة، لذا لم تُرسل (لن يضعها DWIRC على الشبكة كنص واضح). عطّل +AGE هنا للدردشة بشكل طبيعي.</string>
     <string name="core_nick_still_in_use">‏%1$s ما زال مستخدماً؛ تُعاد المحاولة بهدوء في الخلفية (عادةً ما تنتهي الجلسة العالقة خلال بضع دقائق).</string>
     <string name="core_nick_gave_up">توقفت محاولات استعادة %1$s، وما زال مستخدماً. استخدم ‎/nick %1$s لإعادة المحاولة.</string>
     <string name="core_oversize_line_dropped">أُسقط سطر IRC وارد كبير جداً (&gt;32 كيبيبايت). تم إبقاء الاتصال؛ وستكون عمليات الإسقاط اللاحقة صامتة.</string>

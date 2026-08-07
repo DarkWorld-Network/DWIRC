@@ -2,7 +2,7 @@
     <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
-    <string name="welcome_title">Welkom bij HexDroid</string>
+    <string name="welcome_title">Welkom bij DWIRC</string>
     <string name="welcome_subtitle">Laten we u instellen voordat we beginnen.</string>
     <string name="welcome_language_label">Taal</string>
     <string name="welcome_nick_label">Bijnaam</string>
@@ -191,7 +191,7 @@
 
     <!-- Tour steps -->
     <string name="tour_add_network_title">Jouw netwerken</string>
-    <string name="tour_add_network_body">Tik op + om een server toe te voegen of bewerk de bestaande. HexDroid heeft een paar standaardnetwerken.</string>
+    <string name="tour_add_network_body">Tik op + om een server toe te voegen of bewerk de bestaande. DWIRC heeft een paar standaardnetwerken.</string>
     <string name="tour_connect_title">Verbinden</string>
     <string name="tour_connect_body">Tik op Verbinden om een verbinding te openen. Je kunt meerdere netwerken tegelijk verbinden.</string>
     <string name="tour_switcher_title">Bufferlijst</string>
@@ -207,7 +207,7 @@
     <string name="tour_send_file_title">Bestand verzenden</string>
     <string name="tour_send_file_body">Voer de doelnick in en kies een bestand uit de opslag. Inkomende DCC-aanbiedingen komen hier ook binnen, accepteer of weiger ze via meldingen.</string>
     <string name="tour_support_title">Hulp nodig?</string>
-    <string name="tour_support_body">Verbind met DarkWorld en kom naar #Help voor support, functieverzoeken, of om te chatten met andere HexDroid-gebruikers.</string>
+    <string name="tour_support_body">Verbind met DarkWorld en kom naar #Help voor support, functieverzoeken, of om te chatten met andere DWIRC-gebruikers.</string>
     <string name="tour_support_fallback">DarkWorld staat nog niet in je lijst: tik op DarkWorld toevoegen, verbind dan en kom naar #Help.</string>
     <string name="tour_support_action">DarkWorld toevoegen</string>
     <string name="tour_replay_title">Tour opnieuw afspelen</string>
@@ -751,7 +751,7 @@ Dit is een nieuwe Android 17-vereiste voor verbindingen met servers op het lokal
     <string name="enc_safety_number">Veiligheidsnummer</string>
     <string name="enc_verify_match">Controleer of dit overeenkomt met wat de andere partij ziet.</string>
     <string name="enc_cipher">Cijfer</string>
-    <string name="enc_agm_desc">HexDroids Authenticated Group Messaging.  Eén willekeurige 256-bits sleutel, geauthenticeerde versleuteling per bericht. Je deelt de sleutel zelf.</string>
+    <string name="enc_agm_desc">DWIRCs Authenticated Group Messaging.  Eén willekeurige 256-bits sleutel, geauthenticeerde versleuteling per bericht. Je deelt de sleutel zelf.</string>
     <string name="enc_age_desc">Authenticated Group Exchange.  Sleutels worden automatisch onderhandeld en roteren vooruit. Forward secrecy voor privéberichten.</string>
     <string name="enc_fish_desc">Gebruik FiSH alleen als de andere kant geen +AGM of +AGE ondersteunt.</string>
     <string name="enc_regen">Opnieuw genereren</string>
@@ -963,7 +963,7 @@ Dit is een nieuwe Android 17-vereiste voor verbindingen met servers op het lokal
     <string name="vm_names_none">NAMES voor %1$s: (geen)</string>
     <string name="vm_names_header">NAMES voor %1$s (%2$s):</string>
     <string name="vm_log_write_failed">Logboek schrijven mislukt voor %1$s: %2$s</string>
-    <string name="vm_dcc_lan_perm">DCC van %1$s: toestemming voor het lokale netwerk vereist (Android 17+). Geef die bij Instellingen → Apps → HexDroid → Rechten.</string>
+    <string name="vm_dcc_lan_perm">DCC van %1$s: toestemming voor het lokale netwerk vereist (Android 17+). Geef die bij Instellingen → Apps → DWIRC → Rechten.</string>
     <string name="vm_dcc_accepted_passive">Passief DCC-aanbod geaccepteerd: %1$s (luistert op %2$s)%3$s</string>
     <string name="vm_dcc_resume_requested">DCC RESUME aangevraagd voor %1$s vanaf %2$s bytes…</string>
     <string name="vm_dcc_resume_agreed">De verzender accepteerde RESUME vanaf %1$s bytes (wij vroegen om %2$s)</string>
@@ -980,7 +980,7 @@ Dit is een nieuwe Android 17-vereiste voor verbindingen met servers op het lokal
     <string name="vm_dcc_chat_connected">DCC CHAT verbonden met %1$s</string>
     <string name="vm_dcc_chat_not_connected">DCC CHAT niet verbonden.</string>
     <string name="vm_dcc_chat_send_failed">Verzenden via DCC CHAT mislukt: %1$s</string>
-    <string name="vm_dcc_chat_lan_perm">DCC CHAT van %1$s: toestemming voor het lokale netwerk vereist (Android 17+). Geef die bij Instellingen → Apps → HexDroid → Rechten.</string>
+    <string name="vm_dcc_chat_lan_perm">DCC CHAT van %1$s: toestemming voor het lokale netwerk vereist (Android 17+). Geef die bij Instellingen → Apps → DWIRC → Rechten.</string>
     <string name="vm_dcc_chat_connecting">DCC CHAT verbinden met %1$s (%2$s:%3$s)…</string>
     <string name="vm_dcc_chat_connect_failed">DCC CHAT-verbinding mislukt: %1$s</string>
     <string name="vm_dcc_chat_rejected">DCC CHAT-aanbod van %1$s geweigerd</string>
@@ -1038,8 +1038,7 @@ Dit is een nieuwe Android 17-vereiste voor verbindingen met servers op het lokal
     <string name="ok">OK</string>
     <string name="remove">Verwijderen</string>
     <string name="add">Toevoegen</string>
-    <string name="about_logo_desc">HexDroid-logo</string>
-    <string name="about_boxlabs_desc">boxlabs</string>
+    <string name="about_logo_desc">DWIRC-logo</string>
     <string name="netedit_port_range">De poort moet tussen 1 en 65535 liggen</string>
     <string name="netedit_sasl_external">EXTERNAL (clientcertificaat)</string>
     <string name="netedit_cert_pem">PEM (.pem)</string>
@@ -1146,7 +1145,7 @@ Dit is een nieuwe Android 17-vereiste voor verbindingen met servers op het lokal
     <string name="core_reg_hint_invalid_code">(controleer de code uit het verificatiebericht nogmaals)</string>
     <string name="core_reg_hint_not_connected">(wacht tot de verbinding volledig tot stand is gekomen en probeer het opnieuw)</string>
     <string name="core_reg_hint_temp_unavailable">(probeer het later opnieuw)</string>
-    <string name="core_age_plaintext_refused">+AGE staat aan voor %1$s, maar dit bericht was niet versleuteld en is daarom NIET verstuurd (HexDroid zet het niet onversleuteld op de lijn). Schakel +AGE hier uit om normaal te chatten.</string>
+    <string name="core_age_plaintext_refused">+AGE staat aan voor %1$s, maar dit bericht was niet versleuteld en is daarom NIET verstuurd (DWIRC zet het niet onversleuteld op de lijn). Schakel +AGE hier uit om normaal te chatten.</string>
     <string name="core_nick_still_in_use">%1$s is nog steeds in gebruik; er wordt stilletjes op de achtergrond opnieuw geprobeerd (een blijven hangen sessie verdwijnt meestal binnen een paar minuten).</string>
     <string name="core_nick_gave_up">Gestopt met pogingen om %1$s te heroveren, nog steeds in gebruik. Gebruik /nick %1$s om het opnieuw te proberen.</string>
     <string name="core_oversize_line_dropped">Een te grote binnenkomende IRC-regel is genegeerd (&gt;32 KiB). De verbinding blijft in stand; volgende gevallen worden stil afgehandeld.</string>

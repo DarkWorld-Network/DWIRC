@@ -2,7 +2,7 @@
     <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
-    <string name="welcome_title">Willkommen bei HexDroid</string>
+    <string name="welcome_title">Willkommen bei DWIRC</string>
     <string name="welcome_subtitle">Richten wir zuerst alles ein, bevor es losgeht.</string>
     <string name="welcome_language_label">Sprache</string>
     <string name="welcome_nick_label">Nickname</string>
@@ -191,7 +191,7 @@
 
     <!-- Tour steps -->
     <string name="tour_add_network_title">Deine Netzwerke</string>
-    <string name="tour_add_network_body">Tippe auf +, um einen Server hinzuzufügen, oder bearbeite die bereits vorhandenen. HexDroid bringt einige Vorgaben mit.</string>
+    <string name="tour_add_network_body">Tippe auf +, um einen Server hinzuzufügen, oder bearbeite die bereits vorhandenen. DWIRC bringt einige Vorgaben mit.</string>
     <string name="tour_connect_title">Verbinden</string>
     <string name="tour_connect_body">Tippe auf Verbinden, um eine Verbindung aufzubauen. Du kannst mit mehreren Netzwerken gleichzeitig verbunden sein.</string>
     <string name="tour_switcher_title">Pufferliste</string>
@@ -207,7 +207,7 @@
     <string name="tour_send_file_title">Datei senden</string>
     <string name="tour_send_file_body">Gib den Ziel-Nick ein und wähle dann eine Datei aus dem Speicher. Eingehende DCC-Angebote landen ebenfalls hier; du kannst sie über die Benachrichtigungen annehmen oder ablehnen.</string>
     <string name="tour_support_title">Brauchst du Hilfe?</string>
-    <string name="tour_support_body">Verbinde dich mit DarkWorld und betritt #Help für Unterstützung, Feature-Wünsche oder einfach zum Plaudern mit anderen HexDroid-Nutzern.</string>
+    <string name="tour_support_body">Verbinde dich mit DarkWorld und betritt #Help für Unterstützung, Feature-Wünsche oder einfach zum Plaudern mit anderen DWIRC-Nutzern.</string>
     <string name="tour_support_fallback">DarkWorld ist noch nicht in deiner Liste: Tippe auf DarkWorld hinzufügen, verbinde dich dann und betritt #Help für Unterstützung.</string>
     <string name="tour_support_action">DarkWorld hinzufügen</string>
     <string name="tour_replay_title">Diese Tour wiederholen</string>
@@ -751,7 +751,7 @@
     <string name="enc_safety_number">Sicherheitsnummer</string>
     <string name="enc_verify_match">Prüfe, ob dies mit dem übereinstimmt, was die Gegenseite sieht.</string>
     <string name="enc_cipher">Verfahren</string>
-    <string name="enc_agm_desc">HexDroids Authenticated Group Messaging.  Ein zufälliger 256-Bit-Schlüssel, authentifizierte Verschlüsselung pro Nachricht. Den Schlüssel teilst du selbst.</string>
+    <string name="enc_agm_desc">DWIRCs Authenticated Group Messaging.  Ein zufälliger 256-Bit-Schlüssel, authentifizierte Verschlüsselung pro Nachricht. Den Schlüssel teilst du selbst.</string>
     <string name="enc_age_desc">Authenticated Group Exchange.  Schlüssel werden automatisch ausgehandelt und rotieren vorwärts. Forward Secrecy für private Nachrichten.</string>
     <string name="enc_fish_desc">Nutze FiSH nur, wenn die Gegenseite weder +AGM noch +AGE beherrscht.</string>
     <string name="enc_regen">Neu erzeugen</string>
@@ -963,7 +963,7 @@
     <string name="vm_names_none">NAMES für %1$s: (keine)</string>
     <string name="vm_names_header">NAMES für %1$s (%2$s):</string>
     <string name="vm_log_write_failed">Protokollschreiben für %1$s fehlgeschlagen: %2$s</string>
-    <string name="vm_dcc_lan_perm">DCC von %1$s: Berechtigung für lokale Netzwerke erforderlich (Android 17+). Erteile sie unter Einstellungen → Apps → HexDroid → Berechtigungen.</string>
+    <string name="vm_dcc_lan_perm">DCC von %1$s: Berechtigung für lokale Netzwerke erforderlich (Android 17+). Erteile sie unter Einstellungen → Apps → DWIRC → Berechtigungen.</string>
     <string name="vm_dcc_accepted_passive">Passives DCC-Angebot angenommen: %1$s (lausche auf %2$s)%3$s</string>
     <string name="vm_dcc_resume_requested">DCC RESUME für %1$s bei %2$s Byte angefordert…</string>
     <string name="vm_dcc_resume_agreed">Absender hat RESUME bei %1$s Byte akzeptiert (angefragt waren %2$s)</string>
@@ -980,7 +980,7 @@
     <string name="vm_dcc_chat_connected">DCC CHAT verbunden mit %1$s</string>
     <string name="vm_dcc_chat_not_connected">DCC CHAT nicht verbunden.</string>
     <string name="vm_dcc_chat_send_failed">DCC-CHAT-Senden fehlgeschlagen: %1$s</string>
-    <string name="vm_dcc_chat_lan_perm">DCC CHAT von %1$s: Berechtigung für lokale Netzwerke erforderlich (Android 17+). Erteile sie unter Einstellungen → Apps → HexDroid → Berechtigungen.</string>
+    <string name="vm_dcc_chat_lan_perm">DCC CHAT von %1$s: Berechtigung für lokale Netzwerke erforderlich (Android 17+). Erteile sie unter Einstellungen → Apps → DWIRC → Berechtigungen.</string>
     <string name="vm_dcc_chat_connecting">DCC CHAT wird zu %1$s verbunden (%2$s:%3$s)…</string>
     <string name="vm_dcc_chat_connect_failed">DCC-CHAT-Verbindung fehlgeschlagen: %1$s</string>
     <string name="vm_dcc_chat_rejected">DCC-CHAT-Angebot von %1$s abgelehnt</string>
@@ -1038,8 +1038,7 @@
     <string name="ok">OK</string>
     <string name="remove">Entfernen</string>
     <string name="add">Hinzufügen</string>
-    <string name="about_logo_desc">HexDroid-Logo</string>
-    <string name="about_boxlabs_desc">boxlabs</string>
+    <string name="about_logo_desc">DWIRC-Logo</string>
     <string name="netedit_port_range">Der Port muss zwischen 1 und 65535 liegen</string>
     <string name="netedit_sasl_external">EXTERNAL (Clientzertifikat)</string>
     <string name="netedit_cert_pem">PEM (.pem)</string>
@@ -1146,7 +1145,7 @@
     <string name="core_reg_hint_invalid_code">(prüfe den Code aus der Bestätigungsnachricht noch einmal)</string>
     <string name="core_reg_hint_not_connected">(warte, bis die Verbindung vollständig steht, und versuche es dann erneut)</string>
     <string name="core_reg_hint_temp_unavailable">(versuche es später erneut)</string>
-    <string name="core_age_plaintext_refused">+AGE ist für %1$s aktiv, aber diese Nachricht war nicht verschlüsselt, daher wurde sie NICHT gesendet (HexDroid überträgt sie nicht im Klartext). Schalte +AGE hier aus, um normal zu chatten.</string>
+    <string name="core_age_plaintext_refused">+AGE ist für %1$s aktiv, aber diese Nachricht war nicht verschlüsselt, daher wurde sie NICHT gesendet (DWIRC überträgt sie nicht im Klartext). Schalte +AGE hier aus, um normal zu chatten.</string>
     <string name="core_nick_still_in_use">%1$s ist noch in Verwendung; es wird im Hintergrund still weiter versucht (eine hängende Sitzung löst sich meist innerhalb weniger Minuten auf).</string>
     <string name="core_nick_gave_up">Zurückerlangen von %1$s aufgegeben, der Nick ist weiterhin in Verwendung. Nutze /nick %1$s für einen neuen Versuch.</string>
     <string name="core_oversize_line_dropped">Eine übergroße eingehende IRC-Zeile (&gt;32 KiB) wurde verworfen. Die Verbindung bleibt bestehen; weitere Verwerfungen erfolgen stillschweigend.</string>

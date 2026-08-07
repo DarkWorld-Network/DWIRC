@@ -2,7 +2,7 @@
     <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
-    <string name="welcome_title">欢迎使用 HexDroid</string>
+    <string name="welcome_title">欢迎使用 DWIRC</string>
     <string name="welcome_subtitle">在开始之前，让我们先完成设置。</string>
     <string name="welcome_language_label">语言</string>
     <string name="welcome_nick_label">昵称</string>
@@ -191,7 +191,7 @@
 
     <!-- Tour steps -->
     <string name="tour_add_network_title">你的网络</string>
-    <string name="tour_add_network_body">点按 + 添加服务器，或编辑已有项。HexDroid 自带几个默认网络。</string>
+    <string name="tour_add_network_body">点按 + 添加服务器，或编辑已有项。DWIRC 自带几个默认网络。</string>
     <string name="tour_connect_title">连接</string>
     <string name="tour_connect_body">点按“连接”以打开连接。你可以同时连接多个网络。</string>
     <string name="tour_switcher_title">缓冲区列表</string>
@@ -207,7 +207,7 @@
     <string name="tour_send_file_title">发送文件</string>
     <string name="tour_send_file_body">输入目标昵称，然后从存储中选择文件。接收到的 DCC 邀请也会出现在此，可从通知中接受或拒绝。</string>
     <string name="tour_support_title">需要帮助？</string>
-    <string name="tour_support_body">连接到 DarkWorld 并加入 #Help 获取支持、提交功能请求，或与其他 HexDroid 用户聊天。</string>
+    <string name="tour_support_body">连接到 DarkWorld 并加入 #Help 获取支持、提交功能请求，或与其他 DWIRC 用户聊天。</string>
     <string name="tour_support_fallback">DarkWorld 还不在你的列表中：点按“添加 DarkWorld”以添加，然后连接并加入 #Help 获取支持。</string>
     <string name="tour_support_action">添加 DarkWorld</string>
     <string name="tour_replay_title">重新播放本导览</string>
@@ -751,7 +751,7 @@
     <string name="enc_safety_number">安全码</string>
     <string name="enc_verify_match">请确认它与对方看到的一致。</string>
     <string name="enc_cipher">加密方式</string>
-    <string name="enc_agm_desc">HexDroid 的 Authenticated Group Messaging。  一把随机的 256 位密钥，对每条消息做带认证的加密。密钥由你自行分享。</string>
+    <string name="enc_agm_desc">DWIRC 的 Authenticated Group Messaging。  一把随机的 256 位密钥，对每条消息做带认证的加密。密钥由你自行分享。</string>
     <string name="enc_age_desc">Authenticated Group Exchange。  密钥自动协商并向前轮换，为私聊消息提供前向保密。</string>
     <string name="enc_fish_desc">只有当对方不支持 +AGM 或 +AGE 时才使用 FiSH。</string>
     <string name="enc_regen">重新生成</string>
@@ -963,7 +963,7 @@
     <string name="vm_names_none">%1$s 的 NAMES：（无）</string>
     <string name="vm_names_header">%1$s 的 NAMES（%2$s）：</string>
     <string name="vm_log_write_failed">%1$s 的日志写入失败：%2$s</string>
-    <string name="vm_dcc_lan_perm">来自 %1$s 的 DCC：需要本地网络权限（Android 17 及以上）。请在 设置 → 应用 → HexDroid → 权限 中授予。</string>
+    <string name="vm_dcc_lan_perm">来自 %1$s 的 DCC：需要本地网络权限（Android 17 及以上）。请在 设置 → 应用 → DWIRC → 权限 中授予。</string>
     <string name="vm_dcc_accepted_passive">已接受被动 DCC 请求：%1$s（正在 %2$s 上监听）%3$s</string>
     <string name="vm_dcc_resume_requested">已请求 %1$s 的 DCC RESUME，从第 %2$s 字节开始…</string>
     <string name="vm_dcc_resume_agreed">发送方接受了从第 %1$s 字节开始的 RESUME（我们请求的是 %2$s）</string>
@@ -980,7 +980,7 @@
     <string name="vm_dcc_chat_connected">DCC CHAT 已连接到 %1$s</string>
     <string name="vm_dcc_chat_not_connected">DCC CHAT 未连接。</string>
     <string name="vm_dcc_chat_send_failed">DCC CHAT 发送失败：%1$s</string>
-    <string name="vm_dcc_chat_lan_perm">来自 %1$s 的 DCC CHAT：需要本地网络权限（Android 17 及以上）。请在 设置 → 应用 → HexDroid → 权限 中授予。</string>
+    <string name="vm_dcc_chat_lan_perm">来自 %1$s 的 DCC CHAT：需要本地网络权限（Android 17 及以上）。请在 设置 → 应用 → DWIRC → 权限 中授予。</string>
     <string name="vm_dcc_chat_connecting">正在将 DCC CHAT 连接到 %1$s（%2$s:%3$s）…</string>
     <string name="vm_dcc_chat_connect_failed">DCC CHAT 连接失败：%1$s</string>
     <string name="vm_dcc_chat_rejected">已拒绝来自 %1$s 的 DCC CHAT 请求</string>
@@ -1038,8 +1038,7 @@
     <string name="ok">确定</string>
     <string name="remove">移除</string>
     <string name="add">添加</string>
-    <string name="about_logo_desc">HexDroid 徽标</string>
-    <string name="about_boxlabs_desc">boxlabs</string>
+    <string name="about_logo_desc">DWIRC 徽标</string>
     <string name="netedit_port_range">端口必须介于 1 和 65535 之间</string>
     <string name="netedit_sasl_external">EXTERNAL（客户端证书）</string>
     <string name="netedit_cert_pem">PEM (.pem)</string>
@@ -1146,7 +1145,7 @@
     <string name="core_reg_hint_invalid_code">（请再次核对验证消息中的验证码）</string>
     <string name="core_reg_hint_not_connected">（请等待完全连接后重试）</string>
     <string name="core_reg_hint_temp_unavailable">（请稍后重试）</string>
-    <string name="core_age_plaintext_refused">%1$s 已启用 +AGE，但这条消息未加密，因此没有发送（HexDroid 不会以明文发出）。若要正常聊天，请在此关闭 +AGE。</string>
+    <string name="core_age_plaintext_refused">%1$s 已启用 +AGE，但这条消息未加密，因此没有发送（DWIRC 不会以明文发出）。若要正常聊天，请在此关闭 +AGE。</string>
     <string name="core_nick_still_in_use">%1$s 仍被占用；正在后台静默重试（滞留的会话通常会在几分钟内释放）。</string>
     <string name="core_nick_gave_up">已放弃取回 %1$s，该昵称仍被占用。可使用 /nick %1$s 重试。</string>
     <string name="core_oversize_line_dropped">已丢弃过大的传入 IRC 行（超过 32 KiB）。连接保持不变；后续丢弃不再提示。</string>

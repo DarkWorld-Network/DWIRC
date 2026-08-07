@@ -140,7 +140,7 @@ class SettingsRepository(private val ctx: Context) {
 }
 
     /**
-     * rewrite a defaulted quit message so new versions are updated to use hexdroid.org
+     * rewrite a legacy default quit message to the current DWIRC default
      */
     suspend fun migrateLegacyQuitMessageIfNeeded() {
         ctx.dataStore.edit { prefs ->
@@ -876,7 +876,7 @@ class SettingsRepository(private val ctx: Context) {
         //   an older build would silently change behaviour.
         root.put("version", 5)
         root.put("minCompatVersion", 1)
-        root.put("app", "HexDroid")
+        root.put("app", "DWIRC")
         root.put("exportedAt", java.time.Instant.now().toString())
         root.put("note", "Passwords and TLS certificates are not included in the backup.")
         root.put("schemaChanges", org.json.JSONArray(listOf(

@@ -2,7 +2,7 @@
     <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
-    <string name="welcome_title">HexDroidへようこそ</string>
+    <string name="welcome_title">DWIRCへようこそ</string>
     <string name="welcome_subtitle">始める前に設定を完了しましょう。</string>
     <string name="welcome_language_label">言語</string>
     <string name="welcome_nick_label">ニックネーム</string>
@@ -191,7 +191,7 @@
 
     <!-- Tour steps -->
     <string name="tour_add_network_title">ネットワーク</string>
-    <string name="tour_add_network_body">+ をタップしてサーバーを追加するか、既存のものを編集します。HexDroid にはいくつかのデフォルトが含まれています。</string>
+    <string name="tour_add_network_body">+ をタップしてサーバーを追加するか、既存のものを編集します。DWIRC にはいくつかのデフォルトが含まれています。</string>
     <string name="tour_connect_title">接続</string>
     <string name="tour_connect_body">「接続」をタップすると接続が開きます。複数のネットワークに同時に接続できます。</string>
     <string name="tour_switcher_title">バッファ一覧</string>
@@ -751,7 +751,7 @@
     <string name="enc_safety_number">安全番号</string>
     <string name="enc_verify_match">相手に表示されている値と一致するか確認してください。</string>
     <string name="enc_cipher">暗号方式</string>
-    <string name="enc_agm_desc">HexDroid の Authenticated Group Messaging。  256ビットのランダム鍵1つで、メッセージごとに認証付き暗号化を行います。鍵は自分で共有します。</string>
+    <string name="enc_agm_desc">DWIRC の Authenticated Group Messaging。  256ビットのランダム鍵1つで、メッセージごとに認証付き暗号化を行います。鍵は自分で共有します。</string>
     <string name="enc_age_desc">Authenticated Group Exchange。  鍵は自動的に交渉され、前方向に更新されます。個人メッセージに前方秘匿性をもたらします。</string>
     <string name="enc_fish_desc">相手が +AGM も +AGE も使えない場合にのみ FiSH を使ってください。</string>
     <string name="enc_regen">再生成</string>
@@ -963,7 +963,7 @@
     <string name="vm_names_none">%1$s の NAMES: (なし)</string>
     <string name="vm_names_header">%1$s の NAMES (%2$s):</string>
     <string name="vm_log_write_failed">%1$s のログ書き込みに失敗しました: %2$s</string>
-    <string name="vm_dcc_lan_perm">%1$s からの DCC: ローカルネットワークの権限が必要です (Android 17 以降)。設定 → アプリ → HexDroid → 権限 で許可してください。</string>
+    <string name="vm_dcc_lan_perm">%1$s からの DCC: ローカルネットワークの権限が必要です (Android 17 以降)。設定 → アプリ → DWIRC → 権限 で許可してください。</string>
     <string name="vm_dcc_accepted_passive">パッシブ DCC の申し出を受け入れました: %1$s (%2$s で待機中)%3$s</string>
     <string name="vm_dcc_resume_requested">%1$s の DCC RESUME を %2$s バイト目から要求しました…</string>
     <string name="vm_dcc_resume_agreed">送信側が %1$s バイト目からの RESUME を受け入れました (要求は %2$s)</string>
@@ -980,7 +980,7 @@
     <string name="vm_dcc_chat_connected">DCC CHAT が %1$s に接続しました</string>
     <string name="vm_dcc_chat_not_connected">DCC CHAT は接続していません。</string>
     <string name="vm_dcc_chat_send_failed">DCC CHAT での送信に失敗しました: %1$s</string>
-    <string name="vm_dcc_chat_lan_perm">%1$s からの DCC CHAT: ローカルネットワークの権限が必要です (Android 17 以降)。設定 → アプリ → HexDroid → 権限 で許可してください。</string>
+    <string name="vm_dcc_chat_lan_perm">%1$s からの DCC CHAT: ローカルネットワークの権限が必要です (Android 17 以降)。設定 → アプリ → DWIRC → 権限 で許可してください。</string>
     <string name="vm_dcc_chat_connecting">DCC CHAT を %1$s に接続しています (%2$s:%3$s)…</string>
     <string name="vm_dcc_chat_connect_failed">DCC CHAT の接続に失敗しました: %1$s</string>
     <string name="vm_dcc_chat_rejected">%1$s からの DCC CHAT の申し出を拒否しました</string>
@@ -1038,8 +1038,7 @@
     <string name="ok">OK</string>
     <string name="remove">削除</string>
     <string name="add">追加</string>
-    <string name="about_logo_desc">HexDroid のロゴ</string>
-    <string name="about_boxlabs_desc">boxlabs</string>
+    <string name="about_logo_desc">DWIRC のロゴ</string>
     <string name="netedit_port_range">ポートは 1〜65535 の範囲で指定してください</string>
     <string name="netedit_sasl_external">EXTERNAL (クライアント証明書)</string>
     <string name="netedit_cert_pem">PEM (.pem)</string>
@@ -1146,7 +1145,7 @@
     <string name="core_reg_hint_invalid_code">(確認メッセージに記載のコードをもう一度確かめてください)</string>
     <string name="core_reg_hint_not_connected">(接続が完了するまで待ってからもう一度お試しください)</string>
     <string name="core_reg_hint_temp_unavailable">(しばらくしてからもう一度お試しください)</string>
-    <string name="core_age_plaintext_refused">%1$s では +AGE が有効ですが、このメッセージは暗号化されていなかったため送信しませんでした (HexDroid は平文で流しません)。通常どおり会話するには、ここで +AGE をオフにしてください。</string>
+    <string name="core_age_plaintext_refused">%1$s では +AGE が有効ですが、このメッセージは暗号化されていなかったため送信しませんでした (DWIRC は平文で流しません)。通常どおり会話するには、ここで +AGE をオフにしてください。</string>
     <string name="core_nick_still_in_use">%1$s はまだ使用中です。バックグラウンドで静かに再試行しています (残っているセッションはたいてい数分で解消します)。</string>
     <string name="core_nick_gave_up">%1$s の取り戻しを断念しました。まだ使用中です。もう一度試すには /nick %1$s を使ってください。</string>
     <string name="core_oversize_line_dropped">大きすぎる受信 IRC 行を破棄しました (32KiB 超)。接続は維持されます。以降の破棄は通知しません。</string>

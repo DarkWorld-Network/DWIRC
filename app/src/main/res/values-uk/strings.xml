@@ -2,7 +2,7 @@
     <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
-    <string name="welcome_title">Вітаємо в HexDroid</string>
+    <string name="welcome_title">Вітаємо в DWIRC</string>
     <string name="welcome_subtitle">Спершу налаштуємо все, перш ніж почати.</string>
     <string name="welcome_language_label">Мова</string>
     <string name="welcome_nick_label">Нік</string>
@@ -191,7 +191,7 @@
 
     <!-- Tour steps -->
     <string name="tour_add_network_title">Ваші мережі</string>
-    <string name="tour_add_network_body">Натисніть +, щоб додати сервер, або змініть наявні. HexDroid постачається з кількома типовими.</string>
+    <string name="tour_add_network_body">Натисніть +, щоб додати сервер, або змініть наявні. DWIRC постачається з кількома типовими.</string>
     <string name="tour_connect_title">Підключення</string>
     <string name="tour_connect_body">Натисніть «Підключитися», щоб установити з\'єднання. Можна бути підключеним до кількох мереж одночасно.</string>
     <string name="tour_switcher_title">Список буферів</string>
@@ -207,7 +207,7 @@
     <string name="tour_send_file_title">Надсилання файлу</string>
     <string name="tour_send_file_body">Введіть нік отримувача, потім виберіть файл у сховищі. Вхідні пропозиції DCC теж надходять сюди, приймайте або відхиляйте їх зі сповіщень.</string>
     <string name="tour_support_title">Потрібна допомога?</string>
-    <string name="tour_support_body">Підключіться до DarkWorld і зайдіть у #Help, щоб отримати підтримку, запропонувати функції або просто поспілкуватися з іншими користувачами HexDroid.</string>
+    <string name="tour_support_body">Підключіться до DarkWorld і зайдіть у #Help, щоб отримати підтримку, запропонувати функції або просто поспілкуватися з іншими користувачами DWIRC.</string>
     <string name="tour_support_fallback">DarkWorld ще немає у вашому списку: натисніть «Додати DarkWorld», потім підключіться і зайдіть у #Help за підтримкою.</string>
     <string name="tour_support_action">Додати DarkWorld</string>
     <string name="tour_replay_title">Повторити цей тур</string>
@@ -751,7 +751,7 @@
     <string name="enc_safety_number">Код безпеки</string>
     <string name="enc_verify_match">Переконайтеся, що він збігається з тим, який бачить інша сторона.</string>
     <string name="enc_cipher">Шифр</string>
-    <string name="enc_agm_desc">Authenticated Group Messaging від HexDroid.  Один випадковий 256-бітний ключ, автентифіковане шифрування кожного повідомлення. Ключ ви передаєте самі.</string>
+    <string name="enc_agm_desc">Authenticated Group Messaging від DWIRC.  Один випадковий 256-бітний ключ, автентифіковане шифрування кожного повідомлення. Ключ ви передаєте самі.</string>
     <string name="enc_age_desc">Authenticated Group Exchange.  Ключі узгоджуються автоматично й оновлюються вперед. Пряма секретність для приватних повідомлень.</string>
     <string name="enc_fish_desc">Використовуйте FiSH лише тоді, коли інша сторона не підтримує +AGM чи +AGE.</string>
     <string name="enc_regen">Створити заново</string>
@@ -963,7 +963,7 @@
     <string name="vm_names_none">NAMES для %1$s: (немає)</string>
     <string name="vm_names_header">NAMES для %1$s (%2$s):</string>
     <string name="vm_log_write_failed">Не вдалося записати журнал для %1$s: %2$s</string>
-    <string name="vm_dcc_lan_perm">DCC від %1$s: потрібен дозвіл на доступ до локальної мережі (Android 17+). Надайте його в Налаштування → Застосунки → HexDroid → Дозволи.</string>
+    <string name="vm_dcc_lan_perm">DCC від %1$s: потрібен дозвіл на доступ до локальної мережі (Android 17+). Надайте його в Налаштування → Застосунки → DWIRC → Дозволи.</string>
     <string name="vm_dcc_accepted_passive">Пасивну пропозицію DCC прийнято: %1$s (прослуховування на %2$s)%3$s</string>
     <string name="vm_dcc_resume_requested">Запрошено DCC RESUME для %1$s з позиції %2$s байтів…</string>
     <string name="vm_dcc_resume_agreed">Відправник прийняв RESUME з позиції %1$s байтів (запитували %2$s)</string>
@@ -980,7 +980,7 @@
     <string name="vm_dcc_chat_connected">DCC CHAT підключено до %1$s</string>
     <string name="vm_dcc_chat_not_connected">DCC CHAT не підключено.</string>
     <string name="vm_dcc_chat_send_failed">Не вдалося надіслати в DCC CHAT: %1$s</string>
-    <string name="vm_dcc_chat_lan_perm">DCC CHAT від %1$s: потрібен дозвіл на доступ до локальної мережі (Android 17+). Надайте його в Налаштування → Застосунки → HexDroid → Дозволи.</string>
+    <string name="vm_dcc_chat_lan_perm">DCC CHAT від %1$s: потрібен дозвіл на доступ до локальної мережі (Android 17+). Надайте його в Налаштування → Застосунки → DWIRC → Дозволи.</string>
     <string name="vm_dcc_chat_connecting">Підключення DCC CHAT до %1$s (%2$s:%3$s)…</string>
     <string name="vm_dcc_chat_connect_failed">Не вдалося підключитися по DCC CHAT: %1$s</string>
     <string name="vm_dcc_chat_rejected">Пропозицію DCC CHAT від %1$s відхилено</string>
@@ -1038,8 +1038,7 @@
     <string name="ok">OK</string>
     <string name="remove">Вилучити</string>
     <string name="add">Додати</string>
-    <string name="about_logo_desc">Логотип HexDroid</string>
-    <string name="about_boxlabs_desc">boxlabs</string>
+    <string name="about_logo_desc">Логотип DWIRC</string>
     <string name="netedit_port_range">Порт має бути від 1 до 65535</string>
     <string name="netedit_sasl_external">EXTERNAL (клієнтський сертифікат)</string>
     <string name="netedit_cert_pem">PEM (.pem)</string>
@@ -1146,7 +1145,7 @@
     <string name="core_reg_hint_invalid_code">(ще раз перевірте код із повідомлення про підтвердження)</string>
     <string name="core_reg_hint_not_connected">(дочекайтеся повного підключення, потім спробуйте ще раз)</string>
     <string name="core_reg_hint_temp_unavailable">(спробуйте пізніше)</string>
-    <string name="core_age_plaintext_refused">+AGE увімкнено для %1$s, але це повідомлення не було зашифровано, тому його НЕ надіслано (HexDroid не передає його у відкритому вигляді). Вимкніть +AGE тут, щоб спілкуватися звичайним чином.</string>
+    <string name="core_age_plaintext_refused">+AGE увімкнено для %1$s, але це повідомлення не було зашифровано, тому його НЕ надіслано (DWIRC не передає його у відкритому вигляді). Вимкніть +AGE тут, щоб спілкуватися звичайним чином.</string>
     <string name="core_nick_still_in_use">%1$s досі зайнято; повторні спроби виконуються тихо у фоні (зависла сесія зазвичай звільняється протягом кількох хвилин).</string>
     <string name="core_nick_gave_up">Спроби повернути %1$s припинено, нік досі зайнято. Скористайтеся /nick %1$s для повторної спроби.</string>
     <string name="core_oversize_line_dropped">Відкинуто завелику вхідну лінію IRC (&gt;32 КіБ). З\'єднання збережено; подальші відкидання будуть без повідомлень.</string>
