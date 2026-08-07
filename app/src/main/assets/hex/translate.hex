@@ -1,4 +1,8 @@
-; Auto translations for HexDroid
+; Auto translations for DWIRC
+;
+; PRIVACY: enabling this script sends selected IRC message text to the
+; configured LibreTranslate server. Review the endpoint and its privacy
+; policy before enabling the script.
 ;
 ; auto-translate incoming foreign-language lines.
 ; A foreign line gets its translation echoed beneath it as a "↳ nick (src→dst): ..." line,
@@ -51,7 +55,7 @@ on LOAD {
   set %lang $setting(applang)
   if ($len(%lang) == 0) { set %lang en }
   ; ===== EDIT THESE =================================================
-  set %ep https://translate.boxlabs.uk ; your LibreTranslate server (base URL is fine)
+  set %ep https://libretranslate.com ; requires an API key; replace with your own server if preferred
   set %apikey                          ; API key (blank = none / self-hosted)
   set %auto_samescript 0               ; 0 = only translate a DIFFERENT script from yours
                                        ; 1 = also translate same-script langs (more requests)
