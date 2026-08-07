@@ -23,7 +23,7 @@ import com.boxlabs.hexdroid.AppScreen
 import com.boxlabs.hexdroid.R
 
 
-enum class IntroTourActionId { ADD_AFTERNET }
+enum class IntroTourActionId { ADD_DARKWORLD }
 
 data class IntroTourAction(
     val id: IntroTourActionId,
@@ -57,7 +57,7 @@ fun buildIntroTour(context: Context? = null): List<IntroTourStep> {
             title  = s(R.string.tour_add_network_title, "Your networks"),
             body   = s(R.string.tour_add_network_body,
                 "Tap + to add a server, or edit the ones already here. " +
-                "HexDroid ships with a few defaults — Libera, Freenode, and AfterNET — " +
+                "DWIRC includes DarkWorld first, with additional public IRC network presets " +
                 "so you can connect straight away."),
         ),
         // 2. Networks list — the Connect button
@@ -124,21 +124,21 @@ fun buildIntroTour(context: Context? = null): List<IntroTourStep> {
                 "Enter the target nick, then pick a file from storage. " +
                 "Incoming DCC offers also arrive here — accept or reject them from this screen."),
         ),
-        // 9. Networks — AfterNET support channel
+        // 9. Networks — DarkWorld support channel
         IntroTourStep(
             screen = AppScreen.NETWORKS,
-            target = TourTarget.NETWORKS_AFTERNET_ITEM,
+            target = TourTarget.NETWORKS_DARKWORLD_ITEM,
             fallbackTarget = TourTarget.NETWORKS_ADD_FAB,
             title  = s(R.string.tour_support_title, "Need help?"),
             body   = s(R.string.tour_support_body,
-                "Connect to AfterNET and join #HexDroid for support, feature requests, " +
-                "or just to chat with other HexDroid users."),
+                "Connect to DarkWorld and join #Help for support, feature requests, " +
+                "or just to chat with DarkWorld users."),
             fallbackBody = s(R.string.tour_support_fallback,
-                "AfterNET isn't in your list yet — tap Add AfterNET to add it, " +
-                "then connect and join #HexDroid for support."),
+                "DarkWorld isn't in your list yet — tap Add DarkWorld to add it, " +
+                "then connect and join #Help for support."),
             action = IntroTourAction(
-                IntroTourActionId.ADD_AFTERNET,
-                s(R.string.tour_support_action, "Add AfterNET"),
+                IntroTourActionId.ADD_DARKWORLD,
+                s(R.string.tour_support_action, "Add DarkWorld"),
                 fallbackOnly = true,
             ),
         ),

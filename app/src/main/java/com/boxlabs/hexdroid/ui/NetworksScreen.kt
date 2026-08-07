@@ -179,15 +179,15 @@ fun NetworksScreen(
         val naturalTops = remember { mutableMapOf<String, Float>() }  // netId -> natural top Y (not updated during drag)
         val itemHeights = remember { mutableMapOf<String, Float>() }  // netId -> height
 
-        // Tour: scroll AfterNET into view when highlighted
+        // Tour: scroll DarkWorld into view when highlighted
         LaunchedEffect(tourActive, tourTarget, state.networks) {
             if (!tourActive) return@LaunchedEffect
-            if (tourTarget == TourTarget.NETWORKS_AFTERNET_ITEM ||
+            if (tourTarget == TourTarget.NETWORKS_DARKWORLD_ITEM ||
                 tourTarget == TourTarget.NETWORKS_CONNECT_BUTTON
             ) {
                 val idx = sortedNetworks.indexOfFirst {
-                    it.id.equals("AfterNET", ignoreCase = true) ||
-                    it.name.equals("AfterNET", ignoreCase = true)
+                    it.id.equals("DarkWorld", ignoreCase = true) ||
+                    it.name.equals("DarkWorld", ignoreCase = true)
                 }
                 if (idx >= 0) {
                     runCatching { listState.animateScrollToItem(idx) }
@@ -215,8 +215,8 @@ fun NetworksScreen(
                     val isConnecting = conn?.connecting == true
                     val status = conn?.status ?: stringResource(R.string.networks_disconnect)
 
-                    val isAfterNet = n.id.equals("AfterNET", ignoreCase = true) ||
-                                     n.name.equals("AfterNET", ignoreCase = true)
+                    val isDarkWorld = n.id.equals("DarkWorld", ignoreCase = true) ||
+                                     n.name.equals("DarkWorld", ignoreCase = true)
 
                     val isDragging = dragFromId == n.id
                     val draggedHeight = itemHeights[dragFromId] ?: 200f
@@ -238,8 +238,8 @@ fun NetworksScreen(
                     )
                     val visualOffset = if (isDragging) dragOffsetY else animatedOffset
 
-                    val cardMod = (if (isAfterNet) {
-                        Modifier.fillMaxWidth().tourTarget(TourTarget.NETWORKS_AFTERNET_ITEM)
+                    val cardMod = (if (isDarkWorld) {
+                        Modifier.fillMaxWidth().tourTarget(TourTarget.NETWORKS_DARKWORLD_ITEM)
                     } else {
                         Modifier.fillMaxWidth()
                     })

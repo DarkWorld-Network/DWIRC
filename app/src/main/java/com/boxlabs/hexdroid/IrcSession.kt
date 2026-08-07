@@ -29,7 +29,7 @@ import java.security.SecureRandom
  * placeholder. Must stay in sync with the default sprinkled across
  * data/SettingsRepository.kt (every NetworkProfile() constructor call site).
  */
-private const val DEFAULT_USERNAME = "hexdroid"
+private val DEFAULT_USERNAMES = setOf("hexdroid", "dwirc")
 
 sealed class IrcAction {
     data class Send(val line: String) : IrcAction()
@@ -638,7 +638,7 @@ class IrcSession(private val config: IrcConfig, private val rng: SecureRandom) {
                     // effectiveAuthIdentity then suffixes the result with /network and/or
                     // @clientid per the bouncer kind so the bouncer can route the connection.
                     val baseAuthcid = s.authcid?.takeIf { it.isNotBlank() }
-                        ?: config.username.takeIf { it.isNotBlank() && it != DEFAULT_USERNAME }
+                        ?: config.username.takeIf { it.isNotBlank() && it !in DEFAULT_USERNAMES }
                         ?: config.nick
                     val authcid = config.effectiveAuthIdentity(baseAuthcid)
                     val pass = s.password
@@ -704,7 +704,7 @@ class IrcSession(private val config: IrcConfig, private val rng: SecureRandom) {
                     // ("hexdroid") as unset so 1.6.1-era profiles continue to SASL as their
                     // nick rather than as the placeholder default value.
                     val baseAuthcid = s.authcid?.takeIf { it.isNotBlank() }
-                        ?: config.username.takeIf { it.isNotBlank() && it != DEFAULT_USERNAME }
+                        ?: config.username.takeIf { it.isNotBlank() && it !in DEFAULT_USERNAMES }
                         ?: config.nick
                     val authcid = config.effectiveAuthIdentity(baseAuthcid)
                     val clientNonce = randomNonce()

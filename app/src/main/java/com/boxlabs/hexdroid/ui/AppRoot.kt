@@ -468,7 +468,7 @@ fun AppRoot(
             },
             onAction = { actionId ->
                 when (actionId) {
-                    IntroTourActionId.ADD_AFTERNET -> vm.addAfterNetDefaults()
+                    IntroTourActionId.ADD_DARKWORLD -> vm.addDarkWorldDefaults()
                 }
             },
         )

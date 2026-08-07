@@ -2312,7 +2312,7 @@ class IrcViewModel(
             // Inherit the nick from an existing network, or fall back to app default.
             val defaultNick = st.networks.firstOrNull()?.nick
                 ?: st.myNick.takeIf { it != "me" }
-                ?: "HexDroidUser"
+                ?: "DWIRCUser"
 
             val existing = st.networks.firstOrNull { n ->
                 n.host.equals(ircUri.host, ignoreCase = true) &&
@@ -2351,7 +2351,7 @@ class IrcViewModel(
                     nick = defaultNick,
                     altNick = "${defaultNick}_",
                     username = defaultNick.lowercase(),
-                    realname = "HexDroid IRC",
+                    realname = "DWIRC",
                     serverPassword = ircUri.serverPassword,
                     saslEnabled = false,
                     saslMechanism = SaslMechanism.PLAIN,
@@ -2770,30 +2770,32 @@ class IrcViewModel(
 
 
     /**
-     * Restore the built-in AfterNET profile (used for support) if the user deleted it.
-     * Safe to call multiple times; it no-ops if a profile named/id AfterNET already exists.
+     * Restore the built-in DarkWorld profile (used for support) if the user deleted it.
+     * Safe to call multiple times; it no-ops if a profile named/id DarkWorld already exists.
      */
-    fun addAfterNetDefaults() {
+    fun addDarkWorldDefaults() {
         viewModelScope.launch {
             val st = _state.value
-            val exists = st.networks.any { it.id.equals("AfterNET", ignoreCase = true) || it.name.equals("AfterNET", ignoreCase = true) }
+            val exists = st.networks.any { it.id.equals("DarkWorld", ignoreCase = true) || it.name.equals("DarkWorld", ignoreCase = true) }
             if (exists) return@launch
 
             val n = NetworkProfile(
-                id = "AfterNET",
-                name = "AfterNET",
-                host = "irc.afternet.org",
+                id = "DarkWorld",
+                name = "DarkWorld",
+                host = "irc.darkworld.network",
                 port = 6697,
                 useTls = true,
-                allowInvalidCerts = true,
-                nick = "HexDroidUser",
-                altNick = "HexDroidUser_",
-                username = "hexdroid",
-                realname = "HexDroid IRC for Android",
+                allowInvalidCerts = false,
+                nick = "DWIRCUser",
+                altNick = "DWIRCUser_",
+                username = "dwirc",
+                realname = "DWIRC for Android",
                 saslEnabled = false,
                 saslMechanism = SaslMechanism.PLAIN,
                 caps = CapPrefs(),
-                autoJoin = listOf(AutoJoinChannel("#HexDroid", null))
+                sortOrder = -100,
+                isFavourite = true,
+                autoJoin = listOf(AutoJoinChannel("#DarkWorld", null))
             )
 
             repo.upsertNetwork(n)
@@ -2802,13 +2804,13 @@ class IrcViewModel(
 
     /**
      * Update the nick (and altNick) on all default server profiles that still have
-     * the factory-default "HexDroidUser" / "HexDroid" nick. Called from the welcome screen
+     * the current DWIRC or legacy HexDroid factory-default nick. Called from the welcome screen
      * so the user's chosen nickname is applied everywhere before they even connect.
      */
     fun updateAllDefaultNetworkNicks(nick: String) {
         viewModelScope.launch {
             val st = _state.value
-            val defaultNicks = setOf("HexDroidUser", "HexDroid", "HexDroidUser_")
+            val defaultNicks = setOf("DWIRCUser", "DWIRC", "DWIRCUser_", "HexDroidUser", "HexDroid", "HexDroidUser_")
             for (net in st.networks) {
                 if (net.nick in defaultNicks) {
                     val updated = net.copy(
@@ -2846,10 +2848,10 @@ fun startAddNetwork() {
 		port = 6697,
 		useTls = true,
 		allowInvalidCerts = false,
-		nick = "HexDroidUser",
-		altNick = "HexDroidUser_",
-		username = "hexdroid",
-		realname = "HexDroid IRC",
+		nick = "DWIRCUser",
+		altNick = "DWIRCUser_",
+		username = "dwirc",
+		realname = "DWIRC",
 		saslEnabled = false,
 		saslMechanism = SaslMechanism.PLAIN,
 		caps = CapPrefs(),

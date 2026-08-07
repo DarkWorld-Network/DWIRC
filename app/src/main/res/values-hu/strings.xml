@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HexDroid IRC</string>
+    <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
     <string name="welcome_title">Üdvözöl a HexDroid</string>
@@ -207,9 +207,9 @@
     <string name="tour_send_file_title">Fájlküldés</string>
     <string name="tour_send_file_body">Add meg a címzett becenevét, majd válassz fájt a tárhelyről. A bejövő DCC kérések is ide érkeznek, melyeket értesítésekből elfogadhatsz, vagy elutasíthatsz.</string>
     <string name="tour_support_title">További segítség</string>
-    <string name="tour_support_body">Támogatásért, javaslatokhoz, vagy csak csevegni a többi HexDroid felhasználóval, kapcsolódj az AfterNET szerverhez és lépj be a #HexDroid csatornára.</string>
-    <string name="tour_support_fallback">Az AfterNET még nincs a listádon: támogatásért koppints az AfterNET hozzáadására, majd kapcsolódj és lépj be a #HexDroid csatornára.</string>
-    <string name="tour_support_action">AfterNET hozzáadása</string>
+    <string name="tour_support_body">Támogatásért, javaslatokhoz, vagy csak csevegni a többi HexDroid felhasználóval, kapcsolódj az DarkWorld szerverhez és lépj be a #Help csatornára.</string>
+    <string name="tour_support_fallback">Az DarkWorld még nincs a listádon: támogatásért koppints az DarkWorld hozzáadására, majd kapcsolódj és lépj be a #Help csatornára.</string>
+    <string name="tour_support_action">DarkWorld hozzáadása</string>
     <string name="tour_replay_title">Bemutató újrakezdése</string>
     <string name="tour_replay_body">Az áttekintést bármikor újrakezdheted innen: Beállítások - Névjegy. Befejezéshez koppints erre: Kész</string>
 

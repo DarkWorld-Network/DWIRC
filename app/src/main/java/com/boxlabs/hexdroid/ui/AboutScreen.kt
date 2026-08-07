@@ -148,8 +148,8 @@ private val CREDITS: List<CreditGroup> = listOf(
 @Composable
 fun AboutScreen(onBack: () -> Unit) {
     val ctx = LocalContext.current
-    val website = "https://hexdroid.boxlabs.uk"
-    val sourceUrl = "https://github.com/boxlabss/HexDroid"
+    val website = "https://darkworld.network"
+    val sourceUrl = "https://github.com/DarkWorld-Network/DWIRC"
     val scroll = rememberScrollState()
     val configuration = LocalConfiguration.current
     val isLandscape = configuration.orientation == Configuration.ORIENTATION_LANDSCAPE

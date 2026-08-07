@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HexDroid IRC</string>
+    <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
     <string name="welcome_title">HexDroid IRC\'ye Hoş Geldiniz</string>
@@ -207,9 +207,9 @@
     <string name="tour_send_file_title">Dosya gönder</string>
     <string name="tour_send_file_body">Hedef nick\'i girin, ardından depolamadan bir dosya seçin. Gelen DCC teklifleri de burada gelir, bildirimlerden kabul edin veya reddedin.</string>
     <string name="tour_support_title">Yardım mı lazım?</string>
-    <string name="tour_support_body">AfterNET\'e bağlanın ve destek, özellik istekleri için veya diğer HexDroid kullanıcılarıyla sohbet etmek için #HexDroid kanalına katılın.</string>
-    <string name="tour_support_fallback">AfterNET henüz listenizde değil: AfterNET Ekle\'ye dokunun, ardından bağlanıp destek için #HexDroid kanalına katılın.</string>
-    <string name="tour_support_action">AfterNET Ekle</string>
+    <string name="tour_support_body">DarkWorld\'e bağlanın ve destek, özellik istekleri için veya diğer HexDroid kullanıcılarıyla sohbet etmek için #Help kanalına katılın.</string>
+    <string name="tour_support_fallback">DarkWorld henüz listenizde değil: DarkWorld Ekle\'ye dokunun, ardından bağlanıp destek için #Help kanalına katılın.</string>
+    <string name="tour_support_action">DarkWorld Ekle</string>
     <string name="tour_replay_title">Bu turu tekrar oynat</string>
     <string name="tour_replay_body">Tanıtımı istediğiniz zaman Ayarlar → Hakkında üzerinden tekrar başlatabilirsiniz. Bitirmek için Bitti\'ye dokunun.</string>
 

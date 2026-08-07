@@ -121,7 +121,7 @@ fun IntroTourOverlay(
         // before deciding that the primary target is absent.
         val fallbackDelayMs = when (step.target) {
             TourTarget.NETWORKS_CONNECT_BUTTON,
-            TourTarget.NETWORKS_AFTERNET_ITEM,
+            TourTarget.NETWORKS_DARKWORLD_ITEM,
             TourTarget.SETTINGS_APPEARANCE_SECTION,
             TourTarget.SETTINGS_RUN_TOUR -> 1000L
             else -> 400L
@@ -270,7 +270,7 @@ fun IntroTourOverlay(
 
                         Text(bodyText, style = MaterialTheme.typography.bodyMedium)
 
-                        // Action button (e.g. "Add AfterNET")
+                        // Action button (e.g. "Add DarkWorld")
                         val action = step.action
                         if (action != null && onAction != null && (!action.fallbackOnly || usingFallback)) {
                             OutlinedButton(

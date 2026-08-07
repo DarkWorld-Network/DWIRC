@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HexDroid IRC</string>
+    <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
     <string name="welcome_title">欢迎使用 HexDroid</string>
@@ -207,9 +207,9 @@
     <string name="tour_send_file_title">发送文件</string>
     <string name="tour_send_file_body">输入目标昵称，然后从存储中选择文件。接收到的 DCC 邀请也会出现在此，可从通知中接受或拒绝。</string>
     <string name="tour_support_title">需要帮助？</string>
-    <string name="tour_support_body">连接到 AfterNET 并加入 #HexDroid 获取支持、提交功能请求，或与其他 HexDroid 用户聊天。</string>
-    <string name="tour_support_fallback">AfterNET 还不在你的列表中：点按“添加 AfterNET”以添加，然后连接并加入 #HexDroid 获取支持。</string>
-    <string name="tour_support_action">添加 AfterNET</string>
+    <string name="tour_support_body">连接到 DarkWorld 并加入 #Help 获取支持、提交功能请求，或与其他 HexDroid 用户聊天。</string>
+    <string name="tour_support_fallback">DarkWorld 还不在你的列表中：点按“添加 DarkWorld”以添加，然后连接并加入 #Help 获取支持。</string>
+    <string name="tour_support_action">添加 DarkWorld</string>
     <string name="tour_replay_title">重新播放本导览</string>
     <string name="tour_replay_body">你随时可以从“设置 → 关于”再次运行此向导。点按“完成”结束。</string>
 

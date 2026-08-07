@@ -1090,7 +1090,7 @@ internal fun parseBouncerNetworkAttrs(
  * ```
  * | Network | OnIRC | IRC Server               | IRC User              | Channels |
  * +---------+-------+--------------------------+-----------------------+----------+
- * | libera  | Yes   | irc.afternet.org:+6697   | nick!ident@host       | 5        |
+ * | libera  | Yes   | irc.example.org:+6697   | nick!ident@host       | 5        |
  * | oftc    | No    | irc.libera.chat:+6697    |                       | 0        |
  * +---------+-------+--------------------------+-----------------------+----------+
  * ```

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HexDroid IRC</string>
+    <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
     <string name="welcome_title">Welkom bij HexDroid</string>
@@ -207,9 +207,9 @@
     <string name="tour_send_file_title">Bestand verzenden</string>
     <string name="tour_send_file_body">Voer de doelnick in en kies een bestand uit de opslag. Inkomende DCC-aanbiedingen komen hier ook binnen, accepteer of weiger ze via meldingen.</string>
     <string name="tour_support_title">Hulp nodig?</string>
-    <string name="tour_support_body">Verbind met AfterNET en kom naar #HexDroid voor support, functieverzoeken, of om te chatten met andere HexDroid-gebruikers.</string>
-    <string name="tour_support_fallback">AfterNET staat nog niet in je lijst: tik op AfterNET toevoegen, verbind dan en kom naar #HexDroid.</string>
-    <string name="tour_support_action">AfterNET toevoegen</string>
+    <string name="tour_support_body">Verbind met DarkWorld en kom naar #Help voor support, functieverzoeken, of om te chatten met andere HexDroid-gebruikers.</string>
+    <string name="tour_support_fallback">DarkWorld staat nog niet in je lijst: tik op DarkWorld toevoegen, verbind dan en kom naar #Help.</string>
+    <string name="tour_support_action">DarkWorld toevoegen</string>
     <string name="tour_replay_title">Tour opnieuw afspelen</string>
     <string name="tour_replay_body">Je kunt de rondleiding altijd opnieuw starten via Instellingen → Over. Tik op Klaar om te eindigen.</string>
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HexDroid IRC</string>
+    <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
     <string name="welcome_title">Вітаємо в HexDroid</string>
@@ -207,9 +207,9 @@
     <string name="tour_send_file_title">Надсилання файлу</string>
     <string name="tour_send_file_body">Введіть нік отримувача, потім виберіть файл у сховищі. Вхідні пропозиції DCC теж надходять сюди, приймайте або відхиляйте їх зі сповіщень.</string>
     <string name="tour_support_title">Потрібна допомога?</string>
-    <string name="tour_support_body">Підключіться до AfterNET і зайдіть у #HexDroid, щоб отримати підтримку, запропонувати функції або просто поспілкуватися з іншими користувачами HexDroid.</string>
-    <string name="tour_support_fallback">AfterNET ще немає у вашому списку: натисніть «Додати AfterNET», потім підключіться і зайдіть у #HexDroid за підтримкою.</string>
-    <string name="tour_support_action">Додати AfterNET</string>
+    <string name="tour_support_body">Підключіться до DarkWorld і зайдіть у #Help, щоб отримати підтримку, запропонувати функції або просто поспілкуватися з іншими користувачами HexDroid.</string>
+    <string name="tour_support_fallback">DarkWorld ще немає у вашому списку: натисніть «Додати DarkWorld», потім підключіться і зайдіть у #Help за підтримкою.</string>
+    <string name="tour_support_action">Додати DarkWorld</string>
     <string name="tour_replay_title">Повторити цей тур</string>
     <string name="tour_replay_body">Ви можете пройти огляд ще раз у будь-який час через Налаштування → Про програму. Натисніть «Готово», щоб завершити.</string>
 

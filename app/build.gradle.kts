@@ -6,11 +6,11 @@ android {
     namespace = "com.boxlabs.hexdroid"
     compileSdk = 37
     defaultConfig {
-        applicationId = "com.boxlabs.hexdroid"
+        applicationId = "network.darkworld.dwirc"
         minSdk = 26
         targetSdk = 37
-        versionCode = 29
-        versionName = "1.7.1"
+        versionCode = 1
+        versionName = "0.1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {

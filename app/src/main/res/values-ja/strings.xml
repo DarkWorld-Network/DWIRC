@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HexDroid IRC</string>
+    <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
     <string name="welcome_title">HexDroidへようこそ</string>
@@ -207,9 +207,9 @@
     <string name="tour_send_file_title">ファイルを送信</string>
     <string name="tour_send_file_body">宛先のニックを入力し、ストレージからファイルを選びます。受信した DCC のオファーもここに届きます。通知から承認または拒否できます。</string>
     <string name="tour_support_title">サポートが必要ですか？</string>
-    <string name="tour_support_body">AfterNET に接続して #HexDroid に参加してください。サポート、機能リクエスト、または他のユーザーとの雑談にどうぞ。</string>
-    <string name="tour_support_fallback">AfterNET はまだ一覧にありません。「AfterNET を追加」をタップして追加し、接続して #HexDroid に参加してください。</string>
-    <string name="tour_support_action">AfterNET を追加</string>
+    <string name="tour_support_body">DarkWorld に接続して #Help に参加してください。サポート、機能リクエスト、または他のユーザーとの雑談にどうぞ。</string>
+    <string name="tour_support_fallback">DarkWorld はまだ一覧にありません。「DarkWorld を追加」をタップして追加し、接続して #Help に参加してください。</string>
+    <string name="tour_support_action">DarkWorld を追加</string>
     <string name="tour_replay_title">ツアーを再生</string>
     <string name="tour_replay_body">ウォークスルーは設定 → アプリ情報からいつでも再実行できます。「完了」をタップして終了します。</string>
 

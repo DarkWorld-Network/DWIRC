@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">HexDroid IRC</string>
+    <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
-    <string name="welcome_title">Welcome to HexDroid</string>
+    <string name="welcome_title">Welcome to DWIRC</string>
     <string name="welcome_subtitle">Let\'s get you set up before we start.</string>
     <string name="welcome_language_label">Language</string>
     <string name="welcome_nick_label">Nickname</string>
@@ -191,7 +191,7 @@
 
     <!-- Tour steps -->
     <string name="tour_add_network_title">Your networks</string>
-    <string name="tour_add_network_body">Tap + to add a server, or edit the ones already here. HexDroid ships with a few defaults.</string>
+    <string name="tour_add_network_body">DarkWorld is ready to connect. You can also add and manage other IRC networks.</string>
     <string name="tour_connect_title">Connect</string>
     <string name="tour_connect_body">Tap Connect to open a connection. You can have multiple networks connected at once.</string>
     <string name="tour_switcher_title">Buffer list</string>
@@ -207,9 +207,9 @@
     <string name="tour_send_file_title">Send a file</string>
     <string name="tour_send_file_body">Enter the target nick, then pick a file from storage. Incoming DCC offers also arrive here, accept or reject them from notifications.</string>
     <string name="tour_support_title">Need help?</string>
-    <string name="tour_support_body">Connect to AfterNET and join #HexDroid for support, feature requests, or just to chat with other HexDroid users.</string>
-    <string name="tour_support_fallback">AfterNET isn\'t in your list yet: tap Add AfterNET to add it, then connect and join #HexDroid for support.</string>
-    <string name="tour_support_action">Add AfterNET</string>
+    <string name="tour_support_body">Connect to DarkWorld and join #Help for support, feature requests, or just to chat with other HexDroid users.</string>
+    <string name="tour_support_fallback">DarkWorld isn\'t in your list yet: tap Add DarkWorld to add it, then connect and join #Help for support.</string>
+    <string name="tour_support_action">Add DarkWorld</string>
     <string name="tour_replay_title">Replay this tour</string>
     <string name="tour_replay_body">You can run the walkthrough again any time from Settings → About. Tap Done to finish.</string>
 
@@ -329,7 +329,7 @@
     <string name="network_bouncer_kind_znc">ZNC  (user@clientid/network)</string>
     <string name="network_bouncer_kind_generic">Generic  (user/network)</string>
     <string name="network_bouncer_network_label">Network name (optional)</string>
-    <string name="network_bouncer_network_help">Which upstream network on the bouncer this profile targets (e.g. \"afternet\", \"libera\"). Combined with the bouncer username field above and, depending on which auth method you choose, in SASL or the PASS line.</string>
+    <string name="network_bouncer_network_help">Which upstream network on the bouncer this profile targets (e.g. \"darkworld\", \"libera\"). Combined with the bouncer username field above and, depending on which auth method you choose, in SASL or the PASS line.</string>
     <string name="network_bouncer_clientid_label">Client ID (optional)</string>
     <string name="network_bouncer_clientid_help">A short identifier for this device, e.g. \"phone\" or \"hexdroid\". Enables per-client buffers and history when the bouncer supports it (ZNC clientbuffer, soju per-client history). Leave blank to share a single buffer across all clients.</string>
     <string name="network_server_password_label">Server password (PASS)</string>
@@ -963,7 +963,7 @@
     <string name="vm_names_none">NAMES for %1$s: (none)</string>
     <string name="vm_names_header">NAMES for %1$s (%2$s):</string>
     <string name="vm_log_write_failed">Log write failed for %1$s: %2$s</string>
-    <string name="vm_dcc_lan_perm">DCC from %1$s: local network permission required (Android 17+). Grant it in Settings → Apps → HexDroid → Permissions.</string>
+    <string name="vm_dcc_lan_perm">DCC from %1$s: local network permission required (Android 17+). Grant it in Settings → Apps → DWIRC → Permissions.</string>
     <string name="vm_dcc_accepted_passive">Accepted passive DCC offer: %1$s (listening on %2$s)%3$s</string>
     <string name="vm_dcc_resume_requested">Requested DCC RESUME for %1$s at %2$s bytes…</string>
     <string name="vm_dcc_resume_agreed">Sender accepted RESUME at %1$s bytes (we asked for %2$s)</string>
@@ -980,7 +980,7 @@
     <string name="vm_dcc_chat_connected">DCC CHAT connected to %1$s</string>
     <string name="vm_dcc_chat_not_connected">DCC CHAT not connected.</string>
     <string name="vm_dcc_chat_send_failed">DCC CHAT send failed: %1$s</string>
-    <string name="vm_dcc_chat_lan_perm">DCC CHAT from %1$s: local network permission required (Android 17+). Grant it in Settings → Apps → HexDroid → Permissions.</string>
+    <string name="vm_dcc_chat_lan_perm">DCC CHAT from %1$s: local network permission required (Android 17+). Grant it in Settings → Apps → DWIRC → Permissions.</string>
     <string name="vm_dcc_chat_connecting">Connecting DCC CHAT to %1$s (%2$s:%3$s)…</string>
     <string name="vm_dcc_chat_connect_failed">DCC CHAT connect failed: %1$s</string>
     <string name="vm_dcc_chat_rejected">Rejected DCC CHAT offer from %1$s</string>
@@ -1038,7 +1038,7 @@
     <string name="ok">OK</string>
     <string name="remove">Remove</string>
     <string name="add">Add</string>
-    <string name="about_logo_desc">HexDroid logo</string>
+    <string name="about_logo_desc">DWIRC logo</string>
     <string name="about_boxlabs_desc">boxlabs</string>
     <string name="netedit_port_range">Port must be between 1 and 65535</string>
     <string name="netedit_sasl_external">EXTERNAL (client cert)</string>

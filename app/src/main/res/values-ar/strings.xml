@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">‏HexDroid IRC</string>
+    <string name="app_name">DWIRC</string>
 
     <!-- Welcome / Setup Screen -->
     <string name="welcome_title">مرحبًا في HexDroid IRC</string>
@@ -207,9 +207,9 @@
     <string name="tour_send_file_title">إرسال ملف</string>
     <string name="tour_send_file_body">أدخل اللقب المستهدف، ثم اختر ملفاً من التخزين. تصل عروض DCC الواردة هنا أيضاً، اقبلها أو ارفضها من الإشعارات.</string>
     <string name="tour_support_title">تحتاج إلى مساعدة؟</string>
-    <string name="tour_support_body">اتصل بـ AfterNET وانضم إلى ‎#HexDroid للدعم أو طلبات الميزات أو مجرد الدردشة مع مستخدمي HexDroid الآخرين.</string>
-    <string name="tour_support_fallback">AfterNET ليست في قائمتك بعد: اضغط على إضافة AfterNET لإضافتها، ثم اتصل وانضم إلى ‎#HexDroid للدعم.</string>
-    <string name="tour_support_action">إضافة AfterNET</string>
+    <string name="tour_support_body">اتصل بـ DarkWorld وانضم إلى ‎#Help للدعم أو طلبات الميزات أو مجرد الدردشة مع مستخدمي HexDroid الآخرين.</string>
+    <string name="tour_support_fallback">DarkWorld ليست في قائمتك بعد: اضغط على إضافة DarkWorld لإضافتها، ثم اتصل وانضم إلى ‎#Help للدعم.</string>
+    <string name="tour_support_action">إضافة DarkWorld</string>
     <string name="tour_replay_title">إعادة تشغيل الجولة</string>
     <string name="tour_replay_body">يمكنك تشغيل الجولة التعريفية مجدداً في أي وقت من الإعدادات ← حول. اضغط تم للإنهاء.</string>
 
