@@ -123,6 +123,7 @@
     <!-- Theme picker -->
     <string name="theme_label">Theme</string>
     <string name="theme_dark">Dark</string>
+    <string name="theme_darkworld">DarkWorld</string>
     <string name="theme_light">Light</string>
     <string name="theme_system">System</string>
 
@@ -207,7 +208,7 @@
     <string name="tour_send_file_title">Send a file</string>
     <string name="tour_send_file_body">Enter the target nick, then pick a file from storage. Incoming DCC offers also arrive here, accept or reject them from notifications.</string>
     <string name="tour_support_title">Need help?</string>
-    <string name="tour_support_body">Connect to DarkWorld and join #Help for support, feature requests, or just to chat with other HexDroid users.</string>
+    <string name="tour_support_body">Connect to DarkWorld and join #Help for support, feature requests, or just to chat with other DWIRC users.</string>
     <string name="tour_support_fallback">DarkWorld isn\'t in your list yet: tap Add DarkWorld to add it, then connect and join #Help for support.</string>
     <string name="tour_support_action">Add DarkWorld</string>
     <string name="tour_replay_title">Replay this tour</string>
@@ -1039,7 +1040,6 @@
     <string name="remove">Remove</string>
     <string name="add">Add</string>
     <string name="about_logo_desc">DWIRC logo</string>
-    <string name="about_boxlabs_desc">boxlabs</string>
     <string name="netedit_port_range">Port must be between 1 and 65535</string>
     <string name="netedit_sasl_external">EXTERNAL (client cert)</string>
     <string name="netedit_cert_pem">PEM (.pem)</string>

@@ -44,6 +44,19 @@ val DarkSurfaceVariant = Color(0xFF1C2330)  // card / sidebar
 val DarkOutline        = Color(0xFF526070)  // steel-blue mid-grey
 val DarkOutlineVariant = Color(0xFF2D3748)  // subtle dividers
 
+// DarkWorld official app palette
+val DarkWorldRed               = Color(0xFFFF243D)
+val DarkWorldRedSoft           = Color(0xFFD9A3AA)
+val DarkWorldRedContainer      = Color(0xFF651624)
+val DarkWorldOnRedContainer    = Color(0xFFFFD9DD)
+val DarkWorldBackground        = Color(0xFF090A0D)
+val DarkWorldSurface           = Color(0xFF15171C)
+val DarkWorldSurfaceVariant    = Color(0xFF1E2026)
+val DarkWorldOutline           = Color(0xFF555861)
+val DarkWorldOutlineVariant    = Color(0xFF34363E)
+val DarkWorldOnSurface         = Color(0xFFF5F5F7)
+val DarkWorldOnSurfaceVariant  = Color(0xFFB8BAC2)
+
 // Matrix / "old school terminal" green theme palette
 val MatrixGreen          = Color(0xFF00FF41)   // classic bright phosphor green
 val MatrixGreenDim       = Color(0xFF00B32A)   // dimmer green for secondary elements

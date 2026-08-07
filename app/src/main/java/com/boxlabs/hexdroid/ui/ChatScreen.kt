@@ -4042,8 +4042,8 @@ fun ChatScreen(
                             .background(
                                 brush = Brush.linearGradient(
                                     colors = listOf(
-										Color(0xFF5B86E5),  // Blue
-										Color(0xFF36D1DC)   // Cyan
+										MaterialTheme.colorScheme.primary,
+                                        MaterialTheme.colorScheme.primaryContainer
                                     )
                                 ),
                                 shape = RoundedCornerShape(4.dp)
@@ -4060,7 +4060,9 @@ fun ChatScreen(
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.Send,
                             contentDescription = stringResource(R.string.chat_send_message),
-                            tint = Color.White.copy(alpha = if (sendPressed) 0.7f else 1f),
+                            tint = MaterialTheme.colorScheme.onPrimary.copy(
+                                alpha = if (sendPressed) 0.7f else 1f
+                            ),
                             modifier = Modifier.size(20.dp)
                         )
                     }

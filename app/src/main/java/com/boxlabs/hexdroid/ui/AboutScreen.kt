@@ -50,7 +50,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.IntrinsicSize
-import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -92,7 +91,6 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.clipPath
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.input.pointer.pointerInput
-import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
@@ -125,9 +123,24 @@ private data class CreditGroup(val title: String, val members: List<Credit>)
 
 private val CREDITS: List<CreditGroup> = listOf(
     CreditGroup(
-        "Development",
+        "DWIRC development",
         listOf(
-            Credit("eck", "Lead", "https://github.com/boxlabss"),
+            Credit(
+                "DarkWorld Network",
+                "Developer and maintainer",
+                "https://github.com/DarkWorld-Network"
+            ),
+        ),
+    ),
+    CreditGroup(
+        "Upstream project",
+        listOf(
+            Credit(
+                "HexDroid by boxlabs",
+                "Original Android IRC client",
+                "https://github.com/boxlabss/HexDroid"
+            ),
+            Credit("eck", "Original lead developer", "https://github.com/boxlabss"),
         ),
     ),
     CreditGroup(
@@ -224,10 +237,10 @@ fun AboutScreen(onBack: () -> Unit) {
 
 @Composable
 private fun AboutContent(ctx: Context, website: String, sourceUrl: String) {
-    // Cyan accent shared with the flask hero so the whole screen reads as one piece.
-    val accent = Color(0xFF00B4F4)
+    // Active theme accent shared with the hero so the screen reads as one piece.
+    val accent = MaterialTheme.colorScheme.primary
 
-    // Tagline with a soft white→cyan gradient fill.
+    // Tagline with a soft white-to-brand-accent gradient fill.
     Text(
         text = stringResource(R.string.about_tagline),
         textAlign = TextAlign.Center,
@@ -336,7 +349,7 @@ private fun AboutContent(ctx: Context, website: String, sourceUrl: String) {
                             stringResource(R.string.about_open_website),
                             style = MaterialTheme.typography.labelLarge,
                             fontWeight = FontWeight.SemiBold,
-                            color = Color(0xFF06121A)
+                            color = MaterialTheme.colorScheme.onPrimary
                         )
                     }
                 }
@@ -571,7 +584,7 @@ private fun FlaskHero(
         label = "hueShift"
     )
 
-    val baseColor = Color(0xFF00B4F4)
+    val baseColor = MaterialTheme.colorScheme.primary
     val accent = hueRotate(baseColor, hueShift)
 
     // Bubble data class
@@ -835,13 +848,14 @@ private fun FlaskHero(
                     .padding(top = 2.dp)
             )
             Text(
-                "HexDroid - A free (and ad-free) app by",
+                "DWIRC © 2026 DarkWorld Network\nBased on HexDroid by boxlabs · GNU GPLv3",
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .padding(bottom = flaskSize + 8.dp),
                 style = MaterialTheme.typography.titleSmall,
                 color = Color.White.copy(alpha = 0.85f),
-                fontWeight = FontWeight.Medium
+                fontWeight = FontWeight.Medium,
+                textAlign = TextAlign.Center
             )
 
             ImprovedFlask(
@@ -984,25 +998,7 @@ private fun ImprovedFlask(
             )
         }
 
-        // Boxlabs logo in liquid
-        val liquidHeightDp = maxHeight * fillFrac
-        val liquidTopDp = maxHeight - liquidHeightDp
-        val markAspect = 175f / 959f
-        val markW = maxWidth * 0.82f
-        val markH = markW * markAspect
-        val markCenterY = liquidTopDp + liquidHeightDp * 0.5f
-        val markTop = (markCenterY - markH / 2f).coerceIn(0.dp, maxHeight - markH)
 
-        Image(
-            painter = painterResource(R.drawable.boxlabs),
-            contentDescription = stringResource(R.string.about_boxlabs_desc),
-            contentScale = ContentScale.Fit,
-            modifier = Modifier
-                .align(Alignment.TopCenter)
-                .offset(y = markTop)
-                .width(markW)
-                .height(markH)
-        )
     }
 }
 

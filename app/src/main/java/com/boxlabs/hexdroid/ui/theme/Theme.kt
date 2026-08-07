@@ -87,6 +87,42 @@ private val LightColorScheme = lightColorScheme(
     outlineVariant = Color(0xFFE2E8F0),
 )
 
+private val DarkWorldColorScheme = darkColorScheme(
+    primary              = DarkWorldRed,
+    onPrimary            = Color(0xFF210006),
+    primaryContainer     = DarkWorldRedContainer,
+    onPrimaryContainer   = DarkWorldOnRedContainer,
+
+    secondary            = DarkWorldRedSoft,
+    onSecondary          = Color(0xFF2C1519),
+    secondaryContainer   = Color(0xFF49252C),
+    onSecondaryContainer = Color(0xFFFFD9DD),
+
+    tertiary             = Color(0xFFAEB4C0),
+    onTertiary           = Color(0xFF171A20),
+    tertiaryContainer    = Color(0xFF30343C),
+    onTertiaryContainer  = Color(0xFFDDE1EA),
+
+    background           = DarkWorldBackground,
+    onBackground         = DarkWorldOnSurface,
+    surface              = DarkWorldSurface,
+    onSurface            = DarkWorldOnSurface,
+    surfaceVariant       = DarkWorldSurfaceVariant,
+    onSurfaceVariant     = DarkWorldOnSurfaceVariant,
+    outline              = DarkWorldOutline,
+    outlineVariant       = DarkWorldOutlineVariant,
+
+    error                = Color(0xFFFF6B5E),
+    onError              = Color(0xFF310004),
+    errorContainer       = Color(0xFF5C1414),
+    onErrorContainer     = Color(0xFFFFDAD5),
+
+    inverseSurface       = Color(0xFFE4E2E3),
+    inverseOnSurface     = Color(0xFF303033),
+    inversePrimary       = Color(0xFFB80D2A),
+    scrim                = Color(0xCC000000),
+)
+
 private val MatrixColorScheme = darkColorScheme(
     primary             = MatrixGreen,
     onPrimary           = MatrixBackground,
@@ -145,7 +181,7 @@ private val TerminalColorScheme = darkColorScheme(
 
 @Composable
 fun HexDroidIRCTheme(
-    themeMode: ThemeMode = ThemeMode.DARK,
+    themeMode: ThemeMode = ThemeMode.DARKWORLD,
     // dynamicColor parameter retained for call-site compatibility but is no longer
     // used directly. dynamic colour is now controlled exclusively by themeMode.
     @Suppress("UNUSED_PARAMETER") dynamicColor: Boolean = false,
@@ -156,21 +192,23 @@ fun HexDroidIRCTheme(
     darkTheme: Boolean? = null,
     content: @Composable () -> Unit
 ) {
+    val isDarkWorld = themeMode == ThemeMode.DARKWORLD
     val isMatrix = themeMode == ThemeMode.MATRIX
     val isTerminal = themeMode == ThemeMode.TERMINAL
     val resolvedDark = darkTheme ?: when (themeMode) {
-        ThemeMode.DARK, ThemeMode.MATRIX, ThemeMode.TERMINAL -> true
+        ThemeMode.DARKWORLD, ThemeMode.DARK, ThemeMode.MATRIX, ThemeMode.TERMINAL -> true
         ThemeMode.LIGHT -> false
         ThemeMode.SYSTEM -> isSystemInDarkTheme()
     }
 
     val colorScheme = when {
-        isMatrix   -> MatrixColorScheme
+        isDarkWorld -> DarkWorldColorScheme
+        isMatrix    -> MatrixColorScheme
         isTerminal -> TerminalColorScheme
         // SYSTEM theme: honour the wallpaper-derived palette on Android 12+ so the app
         // feels integrated with the device's own look. The user has explicitly chosen
         // "Follow system" so a pink or green button is intentional. it matches their
-        // wallpaper. All other explicit themes (LIGHT, DARK) use the fixed HexDroid
+        // wallpaper. All other explicit themes use fixed application palettes
         // palette so semantic colours (unread pill, find highlight, etc.) are predictable.
         themeMode == ThemeMode.SYSTEM && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
             val context = LocalContext.current

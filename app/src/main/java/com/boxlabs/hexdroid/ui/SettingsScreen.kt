@@ -1322,6 +1322,7 @@ private fun SettingToggle(label: String, checked: Boolean, onClick: () -> Unit) 
 private fun ThemePicker(current: ThemeMode, onPick: (ThemeMode) -> Unit) {
     var expanded by remember { mutableStateOf(false) }
     val label = when (current) {
+        ThemeMode.DARKWORLD -> stringResource(R.string.theme_darkworld)
         ThemeMode.DARK -> stringResource(R.string.theme_dark)
         ThemeMode.LIGHT -> stringResource(R.string.theme_light)
         ThemeMode.MATRIX -> stringResource(R.string.theme_matrix)
@@ -1340,6 +1341,7 @@ private fun ThemePicker(current: ThemeMode, onPick: (ThemeMode) -> Unit) {
                 .menuAnchor(ExposedDropdownMenuAnchorType.PrimaryNotEditable)
         )
         ExposedDropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
+            DropdownMenuItem(text = { Text(stringResource(R.string.theme_darkworld)) }, onClick = { onPick(ThemeMode.DARKWORLD); expanded = false })
             DropdownMenuItem(text = { Text(stringResource(R.string.theme_dark)) }, onClick = { onPick(ThemeMode.DARK); expanded = false })
             DropdownMenuItem(text = { Text(stringResource(R.string.theme_light)) }, onClick = { onPick(ThemeMode.LIGHT); expanded = false })
             DropdownMenuItem(text = { Text(stringResource(R.string.settings_matrix_theme)) }, onClick = { onPick(ThemeMode.MATRIX); expanded = false })
