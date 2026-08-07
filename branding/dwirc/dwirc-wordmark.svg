@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500">
+  <defs>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#3b3e45"/><stop offset="1" stop-color="#22242a"/></linearGradient>
+    <radialGradient id="node" cx="35%" cy="30%" r="70%"><stop stop-color="#ff7b88"/><stop offset=".38" stop-color="#ff3349"/><stop offset="1" stop-color="#d90925"/></radialGradient>
+  </defs>
+  <path d="M250 55 414 150q34 19 34 58v166q0 39-34 58l-121 70q-27 16-43 38-16-22-43-38L86 432q-34-19-34-58V208q0-39 34-58z" fill="url(#shield)" stroke="#50535b" stroke-width="8" transform="translate(0 -48) scale(.92)"/>
+  <path d="M158 241 303 165 325 310z" fill="none" stroke="#111318" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="url(#node)" stroke="#ff5366" stroke-width="5"><circle cx="158" cy="241" r="32"/><circle cx="303" cy="165" r="32"/><circle cx="325" cy="310" r="32"/></g>
+  <text x="490" y="242" fill="#202126" font-family="Inter,Roboto,Arial,sans-serif" font-size="190" font-weight="800" letter-spacing="-8">DWIRC</text>
+  <text x="500" y="345" fill="#ff243d" font-family="Inter,Roboto,Arial,sans-serif" font-size="67" font-weight="700" letter-spacing="1">DarkWorld IRC</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="72%">
+      <stop offset="0" stop-color="#311016"/>
+      <stop offset="0.52" stop-color="#111216"/>
+      <stop offset="1" stop-color="#07080a"/>
+    </radialGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#383b42"/>
+      <stop offset="1" stop-color="#22242a"/>
+    </linearGradient>
+    <radialGradient id="node" cx="35%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#ff7b88"/>
+      <stop offset="0.38" stop-color="#ff3349"/>
+      <stop offset="1" stop-color="#d90925"/>
+    </radialGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+  <path d="M512 180 768 328q52 30 52 90v258q0 60-52 90L574 878q-62 36-124 0L256 766q-52-30-52-90V418q0-60 52-90z" fill="#000" opacity=".32" transform="translate(0 18)"/>
+  <path d="M512 160 768 308q52 30 52 90v258q0 60-52 90L580 855q-42 24-68 58-26-34-68-58L256 746q-52-30-52-90V398q0-60 52-90z" fill="url(#shield)" stroke="#4b4e56" stroke-width="12" stroke-linejoin="round"/>
+  <g fill="none" stroke="#111318" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M356 526 610 392 648 646z"/>
+  </g>
+  <g fill="#ff243d" opacity=".48" filter="url(#glow)">
+    <circle cx="356" cy="526" r="76"/><circle cx="610" cy="392" r="76"/><circle cx="648" cy="646" r="76"/>
+  </g>
+  <g fill="url(#node)" stroke="#ff5366" stroke-width="9">
+    <circle cx="356" cy="526" r="56"/><circle cx="610" cy="392" r="56"/><circle cx="648" cy="646" r="56"/>
+  </g>
+</svg>

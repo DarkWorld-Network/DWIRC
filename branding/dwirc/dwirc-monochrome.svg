@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <path fill="#000" fill-rule="evenodd" d="M540 260 744 378q42 24 42 72v206q0 48-42 72l-150 87q-34 19-54 47-20-28-54-47l-150-87q-42-24-42-72V450q0-48 42-72zm-124 247a45 45 0 1 0 0 90 45 45 0 0 0 0-90m203-107a45 45 0 1 0 0 90 45 45 0 0 0 0-90m31 203a45 45 0 1 0 0 90 45 45 0 0 0 0-90"/>
+  <path d="M416 552 619 445 650 648 416 552" fill="none" stroke="#000" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

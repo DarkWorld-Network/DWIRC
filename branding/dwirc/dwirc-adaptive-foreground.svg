@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#3b3e45"/><stop offset="1" stop-color="#22242a"/></linearGradient>
+    <radialGradient id="node" cx="35%" cy="30%" r="70%"><stop stop-color="#ff7b88"/><stop offset=".38" stop-color="#ff3349"/><stop offset="1" stop-color="#d90925"/></radialGradient>
+  </defs>
+  <path d="M540 260 744 378q42 24 42 72v206q0 48-42 72l-150 87q-34 19-54 47-20-28-54-47l-150-87q-42-24-42-72V450q0-48 42-72z" fill="url(#shield)" stroke="#50535b" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M416 552 619 445 650 648z" fill="none" stroke="#111318" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="url(#node)" stroke="#ff5366" stroke-width="7"><circle cx="416" cy="552" r="45"/><circle cx="619" cy="445" r="45"/><circle cx="650" cy="648" r="45"/></g>
+</svg>

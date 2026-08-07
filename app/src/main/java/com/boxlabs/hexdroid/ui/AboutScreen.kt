@@ -827,7 +827,7 @@ private fun FlaskHero(
         // Logo overlay
         Box(modifier = Modifier.fillMaxSize()) {
             Image(
-                painter = painterResource(R.drawable.hexdroid_logo),
+                painter = painterResource(R.drawable.dwirc_logo),
                 contentDescription = stringResource(R.string.about_logo_desc),
                 modifier = Modifier
                     .size(logoSize)
