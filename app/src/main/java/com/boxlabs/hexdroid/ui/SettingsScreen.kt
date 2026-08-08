@@ -1324,6 +1324,9 @@ private fun ThemePicker(current: ThemeMode, onPick: (ThemeMode) -> Unit) {
     val label = when (current) {
         ThemeMode.DARKWORLD -> stringResource(R.string.theme_darkworld)
         ThemeMode.DARK -> stringResource(R.string.theme_dark)
+        ThemeMode.MIDNIGHT -> stringResource(R.string.theme_midnight)
+        ThemeMode.ARCTIC -> stringResource(R.string.theme_arctic)
+        ThemeMode.AMOLED -> stringResource(R.string.theme_amoled)
         ThemeMode.LIGHT -> stringResource(R.string.theme_light)
         ThemeMode.MATRIX -> stringResource(R.string.theme_matrix)
         ThemeMode.TERMINAL -> stringResource(R.string.theme_terminal)
@@ -1343,6 +1346,9 @@ private fun ThemePicker(current: ThemeMode, onPick: (ThemeMode) -> Unit) {
         ExposedDropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
             DropdownMenuItem(text = { Text(stringResource(R.string.theme_darkworld)) }, onClick = { onPick(ThemeMode.DARKWORLD); expanded = false })
             DropdownMenuItem(text = { Text(stringResource(R.string.theme_dark)) }, onClick = { onPick(ThemeMode.DARK); expanded = false })
+            DropdownMenuItem(text = { Text(stringResource(R.string.theme_midnight)) }, onClick = { onPick(ThemeMode.MIDNIGHT); expanded = false })
+            DropdownMenuItem(text = { Text(stringResource(R.string.theme_arctic)) }, onClick = { onPick(ThemeMode.ARCTIC); expanded = false })
+            DropdownMenuItem(text = { Text(stringResource(R.string.theme_amoled)) }, onClick = { onPick(ThemeMode.AMOLED); expanded = false })
             DropdownMenuItem(text = { Text(stringResource(R.string.theme_light)) }, onClick = { onPick(ThemeMode.LIGHT); expanded = false })
             DropdownMenuItem(text = { Text(stringResource(R.string.settings_matrix_theme)) }, onClick = { onPick(ThemeMode.MATRIX); expanded = false })
             DropdownMenuItem(text = { Text(stringResource(R.string.theme_terminal)) }, onClick = { onPick(ThemeMode.TERMINAL); expanded = false })

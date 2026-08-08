@@ -163,7 +163,7 @@ fun AppRoot(
 
     val themeMode = state.settings.themeMode
     val darkTheme = when (themeMode) {
-        ThemeMode.DARKWORLD, ThemeMode.DARK, ThemeMode.MATRIX, ThemeMode.TERMINAL -> true
+        ThemeMode.DARKWORLD, ThemeMode.DARK, ThemeMode.MIDNIGHT, ThemeMode.ARCTIC, ThemeMode.AMOLED, ThemeMode.MATRIX, ThemeMode.TERMINAL -> true
         ThemeMode.LIGHT -> false
         ThemeMode.SYSTEM -> isSystemInDarkTheme()
     }

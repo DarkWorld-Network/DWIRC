@@ -1131,7 +1131,7 @@ class SettingsRepository(private val ctx: Context) {
     }
 }
 
-enum class ThemeMode { SYSTEM, LIGHT, DARKWORLD, DARK, MATRIX, TERMINAL }
+enum class ThemeMode { SYSTEM, LIGHT, DARKWORLD, DARK, MIDNIGHT, ARCTIC, AMOLED, MATRIX, TERMINAL }
 
 data class AutoJoinChannel(val channel: String, val key: String? = null) {
     fun toLine(): String = if (key.isNullOrBlank()) channel else "$channel $key"

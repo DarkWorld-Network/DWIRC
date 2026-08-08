@@ -123,7 +123,10 @@
     <!-- Theme picker -->
     <string name="theme_label">Theme</string>
     <string name="theme_dark">Dark</string>
-    <string name="theme_darkworld">DarkWorld</string>
+    <string name="theme_darkworld">DarkWorld Crimson</string>
+    <string name="theme_midnight">Midnight Violet</string>
+    <string name="theme_arctic">Arctic Blue</string>
+    <string name="theme_amoled">AMOLED Black</string>
     <string name="theme_light">Light</string>
     <string name="theme_system">System</string>
 

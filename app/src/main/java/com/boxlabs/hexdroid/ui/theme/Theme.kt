@@ -123,6 +123,90 @@ private val DarkWorldColorScheme = darkColorScheme(
     scrim                = Color(0xCC000000),
 )
 
+private val MidnightColorScheme = darkColorScheme(
+    primary = MidnightPrimary,
+    onPrimary = Color(0xFF1B102D),
+    primaryContainer = Color(0xFF4C1D95),
+    onPrimaryContainer = Color(0xFFEDE9FE),
+    secondary = MidnightSecondary,
+    onSecondary = Color(0xFF211536),
+    secondaryContainer = Color(0xFF35244F),
+    onSecondaryContainer = Color(0xFFE9DDFF),
+    tertiary = MidnightTertiary,
+    onTertiary = Color(0xFF30103A),
+    tertiaryContainer = Color(0xFF4A2055),
+    onTertiaryContainer = Color(0xFFFCE7FF),
+    background = MidnightBackground,
+    onBackground = Color(0xFFF2EEFA),
+    surface = MidnightSurface,
+    onSurface = Color(0xFFF2EEFA),
+    surfaceVariant = MidnightSurfaceVariant,
+    onSurfaceVariant = Color(0xFFC9C1D8),
+    outline = MidnightOutline,
+    outlineVariant = MidnightOutlineVariant,
+    error = Color(0xFFFF6B7A),
+    onError = Color(0xFF39000A),
+    errorContainer = Color(0xFF5B1622),
+    onErrorContainer = Color(0xFFFFDADD),
+    scrim = Color(0xCC000000),
+)
+
+private val ArcticColorScheme = darkColorScheme(
+    primary = ArcticPrimary,
+    onPrimary = Color(0xFF001F2C),
+    primaryContainer = Color(0xFF064B68),
+    onPrimaryContainer = Color(0xFFC7EEFF),
+    secondary = ArcticSecondary,
+    onSecondary = Color(0xFF002535),
+    secondaryContainer = Color(0xFF123E52),
+    onSecondaryContainer = Color(0xFFD1F1FF),
+    tertiary = ArcticTertiary,
+    onTertiary = Color(0xFF00363A),
+    tertiaryContainer = Color(0xFF164C52),
+    onTertiaryContainer = Color(0xFFD5FAFC),
+    background = ArcticBackground,
+    onBackground = Color(0xFFE6F2FA),
+    surface = ArcticSurface,
+    onSurface = Color(0xFFE6F2FA),
+    surfaceVariant = ArcticSurfaceVariant,
+    onSurfaceVariant = Color(0xFFB8CBD8),
+    outline = ArcticOutline,
+    outlineVariant = ArcticOutlineVariant,
+    error = Color(0xFFFF6B6B),
+    onError = Color(0xFF350005),
+    errorContainer = Color(0xFF5C171B),
+    onErrorContainer = Color(0xFFFFDADA),
+    scrim = Color(0xCC000000),
+)
+
+private val AmoledColorScheme = darkColorScheme(
+    primary = DarkWorldRed,
+    onPrimary = Color(0xFF210006),
+    primaryContainer = Color(0xFF5A1020),
+    onPrimaryContainer = Color(0xFFFFD9DD),
+    secondary = Color(0xFFE0A3AC),
+    onSecondary = Color(0xFF2C1519),
+    secondaryContainer = Color(0xFF401C24),
+    onSecondaryContainer = Color(0xFFFFD9DD),
+    tertiary = Color(0xFFBFC2C8),
+    onTertiary = Color(0xFF1A1A1A),
+    tertiaryContainer = Color(0xFF292929),
+    onTertiaryContainer = Color(0xFFE6E6E6),
+    background = AmoledBackground,
+    onBackground = Color(0xFFF5F5F5),
+    surface = AmoledSurface,
+    onSurface = Color(0xFFF5F5F5),
+    surfaceVariant = AmoledSurfaceVariant,
+    onSurfaceVariant = Color(0xFFC3C3C3),
+    outline = AmoledOutline,
+    outlineVariant = AmoledOutlineVariant,
+    error = Color(0xFFFF6B5E),
+    onError = Color(0xFF310004),
+    errorContainer = Color(0xFF5C1414),
+    onErrorContainer = Color(0xFFFFDAD5),
+    scrim = Color(0xE6000000),
+)
+
 private val MatrixColorScheme = darkColorScheme(
     primary             = MatrixGreen,
     onPrimary           = MatrixBackground,
@@ -193,18 +277,26 @@ fun HexDroidIRCTheme(
     content: @Composable () -> Unit
 ) {
     val isDarkWorld = themeMode == ThemeMode.DARKWORLD
+    val isMidnight = themeMode == ThemeMode.MIDNIGHT
+    val isArctic = themeMode == ThemeMode.ARCTIC
+    val isAmoled = themeMode == ThemeMode.AMOLED
     val isMatrix = themeMode == ThemeMode.MATRIX
     val isTerminal = themeMode == ThemeMode.TERMINAL
     val resolvedDark = darkTheme ?: when (themeMode) {
-        ThemeMode.DARKWORLD, ThemeMode.DARK, ThemeMode.MATRIX, ThemeMode.TERMINAL -> true
+        ThemeMode.DARKWORLD, ThemeMode.DARK, ThemeMode.MIDNIGHT,
+        ThemeMode.ARCTIC, ThemeMode.AMOLED, ThemeMode.MATRIX,
+        ThemeMode.TERMINAL -> true
         ThemeMode.LIGHT -> false
         ThemeMode.SYSTEM -> isSystemInDarkTheme()
     }
 
     val colorScheme = when {
         isDarkWorld -> DarkWorldColorScheme
+        isMidnight  -> MidnightColorScheme
+        isArctic    -> ArcticColorScheme
+        isAmoled    -> AmoledColorScheme
         isMatrix    -> MatrixColorScheme
-        isTerminal -> TerminalColorScheme
+        isTerminal  -> TerminalColorScheme
         // SYSTEM theme: honour the wallpaper-derived palette on Android 12+ so the app
         // feels integrated with the device's own look. The user has explicitly chosen
         // "Follow system" so a pink or green button is intentional. it matches their

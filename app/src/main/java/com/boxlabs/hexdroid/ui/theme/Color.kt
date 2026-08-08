@@ -57,6 +57,33 @@ val DarkWorldOutlineVariant    = Color(0xFF34363E)
 val DarkWorldOnSurface         = Color(0xFFF5F5F7)
 val DarkWorldOnSurfaceVariant  = Color(0xFFB8BAC2)
 
+// Midnight Violet theme palette
+val MidnightPrimary          = Color(0xFFA78BFA)
+val MidnightSecondary        = Color(0xFFC4B5FD)
+val MidnightTertiary         = Color(0xFFF0ABFC)
+val MidnightBackground       = Color(0xFF080711)
+val MidnightSurface          = Color(0xFF12101D)
+val MidnightSurfaceVariant   = Color(0xFF1D192B)
+val MidnightOutline          = Color(0xFF625A78)
+val MidnightOutlineVariant   = Color(0xFF383147)
+
+// Arctic Blue theme palette
+val ArcticPrimary            = Color(0xFF38BDF8)
+val ArcticSecondary          = Color(0xFF7DD3FC)
+val ArcticTertiary           = Color(0xFFA5F3FC)
+val ArcticBackground         = Color(0xFF06111C)
+val ArcticSurface            = Color(0xFF0D1B2A)
+val ArcticSurfaceVariant     = Color(0xFF14283A)
+val ArcticOutline            = Color(0xFF526D82)
+val ArcticOutlineVariant     = Color(0xFF294256)
+
+// AMOLED Black theme palette
+val AmoledBackground         = Color(0xFF000000)
+val AmoledSurface            = Color(0xFF000000)
+val AmoledSurfaceVariant     = Color(0xFF111111)
+val AmoledOutline            = Color(0xFF505050)
+val AmoledOutlineVariant     = Color(0xFF282828)
+
 // Matrix / "old school terminal" green theme palette
 val MatrixGreen          = Color(0xFF00FF41)   // classic bright phosphor green
 val MatrixGreenDim       = Color(0xFF00B32A)   // dimmer green for secondary elements
